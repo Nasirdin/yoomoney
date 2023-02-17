@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ЮMoney</title>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+  <link rel="manifest" href="https://static.yoomoney.ru/files-front/head-resources/wallet/site.webmanifest" />
+  <link rel="mask-icon" color="#8b3ffd" href="./images/safari-pinned-tab.svg" />
+  <meta name="msapplication-TileColor" content="#8b3ffd" />
+  <meta name="msapplication-config"
+    content="https://static.yoomoney.ru/files-front/head-resources/wallet/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <script>window.publicUrlPath = 'https://static.yoomoney.ru/cards-client/';</script>
+  <script>(function () { var n = 0; var LIMIT = 10; window.onerror = function (message, url, line, col, error) { var req = new XMLHttpRequest(); var stack = error && error.stack || ''; if (req && n < LIMIT) { n += 1; req.open('POST', '/cards-client/platform/client-errors', true); req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); req.send('url=' + encodeURIComponent(location.href) + '&message=' + encodeURIComponent(message) + '&stacktrace=' + encodeURIComponent(stack) + '&userAgent=' + encodeURIComponent(navigator.userAgent)); } }; })();</script>
+</head>
+
+<body class="styled__StyledBody-sc-twniam-0 dFLypM">
+  <div>
+    <div id="header">
+      <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 hnUsMC">
+        <div class="styled__StyledWrapper-sc-1qjrhaj-0 eaTgAx"></div>
+        <div class="styled__StyledHeader-sc-x0c06y-0 jWDxag">
+          <div class="styled__StyledHeaderWrapper-sc-x0c06y-1 iiZqQy qa-header-wrapper">
+            <div class="styled__StyledHeaderBox-sc-x0c06y-2 dSBkKv header-fragment">
+              <div class="styled__StyledServiceLogoWrapper-sc-x0c06y-3 PEIZt"><a aria-label="Главная страница"
+                  href="/?_openstat=template%3Bimenu%3Blogo" tabindex="-1"
+                  class="styled__StyledServiceLogo-sc-14ms6wa-0 kGLkTi qa-service-logo">
+                  <div class="styled__StyledLogo-sc-172ybhd-0 btMBAl"><svg width="129" height="27" viewBox="0 0 129 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="YooMoneyLogoBrandColor"
+                        d="M24.5225 0C17.0035 0 11.0225 6.06646 11.0225 13.5C11.0225 21.019 17.0889 27 24.5225 27C31.956 27 38.0225 20.9335 38.0225 13.5C38.1079 6.06646 31.956 0 24.5225 0ZM24.5225 18.5411C21.7883 18.5411 19.4813 16.2342 19.4813 13.5C19.4813 10.7658 21.7883 8.45886 24.5225 8.45886C27.2566 8.45886 29.5636 10.7658 29.5636 13.5C29.5636 16.2342 27.3421 18.5411 24.5225 18.5411Z">
+                      </path>
+                      <path class="YooMoneyLogoBrandColor" d="M11.0222 3.93005V23.5819H6.1519L0 3.93005H11.0222Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M124.917 7.43433L121.926 14.7824C121.841 14.8679 121.841 15.0388 121.841 15.1242L121.755 15.2951L121.67 15.1242C121.67 15.0388 121.584 14.8679 121.584 14.7824L118.594 7.43433H114.749L119.79 19.9944L117.654 24.7793H121.499L128.591 7.43433H124.917Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M96.5505 8.11703C95.867 7.60437 95.0125 7.2626 93.9872 7.17716C92.2784 7.00627 90.6549 7.60438 89.5442 8.71513V7.34805H86.041V19.9082H89.5442V13.3291C89.5442 11.8765 89.8005 11.4493 90.0568 11.1075C90.4841 10.424 91.253 10.0822 92.1929 10.0822C93.1328 10.0822 93.9872 10.5094 94.4144 11.193C94.6708 11.7056 94.7562 12.3892 94.7562 12.731C94.7562 13.8417 94.7562 19.9082 94.7562 19.9082H98.2594V12.3037C98.2594 10.3385 97.6613 8.97146 96.5505 8.11703Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M79.3763 7.5197C77.6674 6.9216 75.7877 7.00704 74.0788 7.77603C72.9681 8.28869 71.9428 9.14312 71.3447 10.2539C70.7466 11.1937 70.4902 12.39 70.4902 13.6716C70.4902 14.9532 70.7466 16.1494 71.3447 17.0893C71.9428 18.0292 72.7117 18.8836 73.7371 19.3963C74.7624 19.9089 75.9586 20.2507 77.0693 20.2507C77.6674 20.2507 78.2655 20.1653 78.8637 19.9944C79.3763 19.8235 79.889 19.6526 80.4016 19.3963C81.4269 18.7982 82.2814 18.0292 82.794 17.0893C83.3921 16.1494 83.6485 14.9532 83.6485 13.6716C83.7339 10.852 82.1105 8.45957 79.3763 7.5197ZM80.4016 13.8425C80.3162 14.9532 79.9744 15.8931 79.2909 16.4912C78.7782 16.9184 78.0092 17.1748 77.0693 17.2602C76.1295 17.2602 75.4459 17.0039 74.8478 16.4912C74.1643 15.8931 73.8225 14.9532 73.7371 13.8425C73.6516 12.5608 74.1643 11.5355 75.1042 10.852C75.6168 10.5102 76.3004 10.2539 76.9839 10.2539C77.7529 10.2539 78.351 10.5102 78.9491 10.852C79.9744 11.4501 80.4871 12.5608 80.4016 13.8425Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M66.4743 8.11712C65.7907 7.60446 64.9363 7.26269 63.911 7.17725C63.7401 7.17725 63.4838 7.17725 63.3129 7.17725C61.9458 7.17725 60.7496 7.77535 59.7243 8.97155L59.5534 9.22788H59.2116C58.9553 8.80066 58.6135 8.4589 58.2717 8.20257C57.5882 7.68991 56.7338 7.34813 55.7084 7.26269C54.085 7.0918 52.8034 7.60446 51.6926 8.80066V7.51902H48.1895V20.0791H51.6926V13.5V13.3291C51.6926 11.9621 51.8635 11.6203 52.1198 11.1931C52.5471 10.5095 53.316 10.0823 54.1705 10.1678C55.0249 10.1678 55.7939 10.595 56.2211 11.2785C56.5629 11.7912 56.5629 12.3893 56.5629 12.9874V19.9937H60.066V13.2437C60.066 11.9621 60.2369 11.5348 60.4933 11.1076C60.9205 10.4241 61.6895 10.0823 62.5439 10.0823C63.3983 10.0823 64.0819 10.5095 64.5091 11.1931C64.7654 11.6203 64.8508 12.1329 64.8508 12.4747C64.8508 12.6456 64.8508 12.8165 64.8508 12.9019V19.9083H68.354V12.2184C68.354 11.5348 68.2686 10.8513 68.0977 10.2532C67.7559 9.39876 67.2433 8.62978 66.4743 8.11712Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M111.417 16.1494C110.904 16.662 109.708 17.6019 108.085 17.6873C106.718 17.7728 105.692 17.3456 104.923 16.5766C104.582 16.2348 104.325 15.7221 104.154 15.2095H113.809V15.124C113.895 14.6114 113.98 14.1842 113.98 13.6715C113.98 13.2443 113.895 12.6462 113.724 11.8772C113.297 10.4247 112.442 9.31392 111.332 8.45948C110.05 7.51961 108.854 7.26328 108.512 7.26328C106.034 6.83607 103.214 7.94682 101.762 10.2538C100.737 11.8772 100.822 13.5006 100.822 14.0133C100.822 14.6114 100.907 16.4911 102.445 18.2C104.24 20.1652 106.718 20.2506 107.487 20.3361C110.904 20.4215 113.211 18.2854 113.724 17.8582L111.417 16.1494ZM105.436 10.8519C105.949 10.5101 106.547 10.2538 107.316 10.2538C108.085 10.2538 108.683 10.5101 109.281 10.8519C109.794 11.2791 110.221 11.7918 110.477 12.3899H104.325C104.411 11.7918 104.838 11.1937 105.436 10.8519Z">
+                      </path>
+                    </svg></div>
+                </a></div>
+              <div>
+                <div class="styled__StyledNotifierAndUserWrapper-sc-b7vtrh-0 kqbEiN"><a
+                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-disableElevation MuiButtonBase-root MuiButton-containedActive styled__StyledAddMoneyMuiButton-sc-b7vtrh-3 eGBRlr qa-add-money-button lsp-ak8w8a"
+                    tabindex="0" href="https://yoomoney.ru/prepaid?from=layout-portal-header">Пополнить</a>
+                  <div class="qa-user">
+                    <div aria-label="Открыть боковое меню"
+                      class="PtIconPlus__StyledPtIconPlus-sc-1cgbb1n-0 fwVKXb User2__StyledUser2PtIconPlus-sc-5tvppr-1 NKSiC">
+                      <div class="PtIconPlus__StyledPtIconPlusBlock-sc-1cgbb1n-2 bxYOMM">
+                        <div
+                          class="User2Balance__StyledUser2Balance-sc-osahmw-0 cCjlwU qa-user-show-sidebar-balance ym-hide-content">
+                          <div class="Decorator__StyledDecorator-sc-12ji3ka-0 gcrsUe"><span
+                              class="Text__StyledTextSpan-sc-9bqqn7-0 jBNBBO"><span aria-label="0₽"><span
+                                  class="Text__StyledTextSpan-sc-9bqqn7-0 bQDMdt">0</span><span
+                                  class="Text__StyledTextSpan-sc-9bqqn7-0 dZyMnu"> <!-- -->₽</span></span></span></div>
+                        </div>
+                      </div>
+                      <div class="PtIconPlus__StyledPtIconPlusIcon-sc-1cgbb1n-1 hEHmFj qa-user-show-sidebar-avatar">
+                        <div class="UserPic__StyledUserPicWrapper-sc-dm1xf7-0 iygnXt">
+                          <div class="PtAvatar__StyledPtAvatar-sc-68rzod-1 ivRGCO">
+                            <div
+                              class="PtAvatar__StyledPtAvatarPhoto-sc-68rzod-0 VQpQf UserPic__StyledPtAvatarPhoto-sc-dm1xf7-2 cZHrAc">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="PtIconPlus__StyledPtIconPlusIcon-sc-1cgbb1n-1 kvsAil"><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP User2__StyledArrowIcon-sc-5tvppr-0 gZwXQp">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd" d="M15 5.425L13.59 4 8 9.65 2.41 4 1 5.425 8 12.5l7-7.075z">
+                            </path>
+                          </g>
+                        </svg></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="styled__StyledHeaderMenuAndSearchWrapper-sc-b7vtrh-5 hvrNHO">
+                  <div class="styled__StyledMenuContainer-sc-b7vtrh-4 gsZOtz">
+                    <div
+                      class="Decorator__StyledDecorator-sc-12ji3ka-0 jUupUs qa-menu styled__StyledMenu-sc-b7vtrh-6 coJhWP"
+                      display="flex">
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-shops"
+                          href="https://yoomoney.ru/catalogue"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Оплата услуг</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-transfers"
+                          href="https://yoomoney.ru/transfer?from=layout-portal-menu"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Переводы</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-gamesAndServices"
+                          href="https://yoomoney.ru/digital-goods/games"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Игры и программы</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 lalQcX"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 jzFdot qa-bankCards"
+                          href="https://yoomoney.ru/cards"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Карты</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-discountsAndBonuses"
+                          href="https://yoomoney.ru/loyalty"><span class="styled__StyledText-sc-1pdlztl-3 BvwDh">Кэшбэк
+                            и акции</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-receiveMoney"
+                          href="https://yoomoney.ru/get"><span class="styled__StyledText-sc-1pdlztl-3 BvwDh">Сбор
+                            денег</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 hqhjjC qa-marketing"
+                          href="/yoovillage/promo?utm_source=money&amp;utm_campaign=yoovillage&amp;utm_medium=banner&amp;utm_content=portal_shapka"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">ЮVillage</span></a></div>
+                    </div>
+                  </div>
+                  <div class="styled__StyledSearchContainer-sc-b7vtrh-7 dSHqZM"><button
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium qa-search-button lsp-ssonp8"
+                      tabindex="0" type="button" aria-label="Поиск"><svg class="Icon2__StyledIcon2-sc-1u14edl-0 gAwMYr">
+                        <g class="Icon2__StyledG-sc-1u14edl-2">
+                          <path
+                            d="M16.315 14.901L22 20.586 20.586 22l-5.685-5.685a7.997 7.997 0 111.414-1.414zM10 16a6 6 0 100-12 6 6 0 000 12z">
+                          </path>
+                        </g>
+                      </svg></button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="root">
+    <div class="BasePage__StyledPage-sc-128vpb8-0 ekzciJ">
+      <div class="styled__StyledGrid-sc-3t64fl-0 eiQFbM">
+        <div class="styled__StyledPromoPlastic-sc-1f6bjy1-0 iaxrZo qa-promo-plastic-loyalty">
+          <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 fDHNhB">
+            <div class="styled__StyledContent-sc-1f6bjy1-1 cZnJId">
+              <h1
+                class="MuiTypography-root MuiTypography-h1 MuiTypography-colorPrimary styled__StyledTitle-sc-1f6bjy1-2 clIJED qa-title mui-90n9vp">
+                Пластиковая карта «Мир»</h1>
+              <div class="styled__StyledDescriptionsList-sc-1f6bjy1-3 fviEEa">
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-1 mui-nd66g3">
+                  Закажите карту, получите и активируйте</p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-2 mui-nd66g3">
+                  Совершите покупки на <span aria-label="15000₽"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 dZyMnu">15 000</span><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 dZyMnu"> <!-- -->₽</span></span> за 45 дней с момента
+                  заказа</p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-3 mui-nd66g3">
+                  Получите 399 баллов в кошелёк, 1 балл = 1 ₽</p>
+              </div>
+              <div class="styled__StyledButtonWrapper-sc-1f6bjy1-5 eLshye">
+                <a class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-button mui-9ez1nc"
+                  tabindex="0" href="/cards/order/plastic/common" target="_blank">Заказать пластик</a>
+                <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiTypography-colorPrimary styled__StyledLink-sc-1f6bjy1-6 jXTSry qa-link-more mui-171gzy8"
+                  target="_blank" href="https://promo.yoomoney.ru/card_cashback">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="styled__StyledPictureWrapper-sc-1f6bjy1-7 bmKlMG">
+            <picture>
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-xs.ee86d88e0fb4eb14dd17.webp, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-xs-2x.2c68e075964f1811a0e1.webp 2x"
+                media="(max-width: 736px)" type="image/webp" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-s.e6149f7b1750ea914140.webp, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-s-2x.a3856726bf28a1bdbd07.webp 2x"
+                media="(min-width: 737px) and (max-width: 1023px)" type="image/webp" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-m.09f37d1fa54e1a5bddea.webp, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-m-2x.09e2467854cb992e99b5.webp 2x"
+                media="(min-width: 1024px) and (max-width: 1279px)" type="image/webp" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-l.1313eda619f74b5477de.webp, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-l-2x.21e52f6f679387be5ef4.webp 2x"
+                media="(min-width: 1280px)" type="image/webp" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-xs.56c9ac7d8bc1cf46c6ef.png, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-xs-2x.4325652b6aa7de81b03b.png 2x"
+                media="(max-width: 736px)" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-s.99fbcdc51f0ee192f00b.png, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-s-2x.8df60d1e3106f9ee4950.png 2x"
+                media="(min-width: 737px) and (max-width: 1023px)" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-m.8f78a04da8a71359e95b.png, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-m-2x.fbd436bae77733b43206.png 2x"
+                media="(min-width: 1024px) and (max-width: 1279px)" />
+              <source
+                srcSet="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-l.c3113f3698b75d55c7eb.png, https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-l-2x.17ca6a1048f72ff27d92.png 2x"
+                media="(min-width: 1280px)" /><img
+                src="https://static.yoomoney.ru/cards-client/media/picture-plastic-loyalty-s.99fbcdc51f0ee192f00b.png"
+                class="styled__StyledImage-sc-1f6bjy1-4 jVYPPL" />
+            </picture>
+          </div>
+        </div>
+        <div class="styled__StyledPromo-sc-15ggw44-0 ZiekK qa-promo-virtual-online">
+          <div class="styled__StyledContent-sc-15ggw44-1 gYWktT">
+            <h2
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-colorPrimary styled__StyledTitle-sc-15ggw44-2 hBOrrt qa-title mui-90n9vp">
+              Карта для онлайн-шопинга за 0 ₽</h2>
+            <div class="styled__StyledDescriptionsList-sc-15ggw44-3 djdxFd">
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-1 mui-nd66g3">
+                Это виртуалка, которая выпускается за несколько секунд, а работает 5 лет</p>
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-2 mui-nd66g3">
+                Подходит для безопасных платежей в интернете — за такси, доставку, подписки и другие покупки на
+                российских сайтах</p>
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-3 mui-nd66g3">
+                Приносит кэшбэк — до 5% баллами</p>
+            </div>
+            <div class="styled__StyledButtonWrapper-sc-15ggw44-5 gRtxbc">
+              <div
+                class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 chByEO styled__StyledButtonTheme-sc-15ggw44-7 eLfZEc">
+                <a class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-button mui-9ez1nc"
+                  tabindex="0" href="https://yoomoney.ru/cards/order/virtual/common">Получить карту</a>
+              </div>
+              <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone MuiTypography-colorBrand styled__StyledLink-sc-15ggw44-6 jurxYM qa-link-more mui-57df3k"
+                href="/cards/onlinevirtual">Подробнее</a>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-xs.0ce075635b5dbf2e1c27.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-xs-2x.a2b167e2f1afe4dd5f70.webp 2x"
+              media="(max-width: 736px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-s.981e0a36455f4828148b.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-s-2x.e3d4a7f71ea6a5acd83c.webp 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-m.865fb7a25c5a37aaa828.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-m-2x.ab8da06870c736207ba3.webp 2x"
+              media="(min-width: 1024px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-xs.68df85ed94a98c4cf076.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-xs-2x.cd8eb08b335ce85e5614.png 2x"
+              media="(max-width: 736px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-s.78a642b2815e41d018ce.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-s-2x.0c0666f8acd4275ddf05.png 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-m.16d8482c93a2ca394c2e.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-m-2x.446101f5177b2e20e59b.png 2x"
+              media="(min-width: 1024px)" /><img
+              src="https://static.yoomoney.ru/cards-client/media/picture-virtual-yoo-s.78a642b2815e41d018ce.png"
+              class="styled__StyledPicture-sc-15ggw44-4 iYUkQi" />
+          </picture>
+        </div>
+        <div class="styled__StyledPromoHCE-sc-18r34qq-0 eneNHz qa-promo-hce">
+          <div class="styled__StyledContent-sc-18r34qq-1 jlBwvc">
+            <h1
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-colorPrimary styled__StyledTitle-sc-18r34qq-2 dqqSbK qa-title mui-90n9vp">
+              Бесконтактная карта за 0 ₽</h1>
+            <div class="styled__StyledDescriptionsList-sc-18r34qq-3 glXwCe">
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-1 mui-nd66g3">
+                Чтобы платить смартфоном в одно касание: на кассе или через терминал курьера. Получите бесплатно в
+                приложении ЮMoney для Android™</p>
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-2 mui-nd66g3">
+                Кэшбэк баллами — до 5%</p>
+            </div>
+            <div class="styled__StyledButtonWrapper-sc-18r34qq-5 btGWBn"><a
+                class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-button mui-9ez1nc"
+                tabindex="0" href="https://promo.yoomoney.ru/hce-card">Хочу карту</a></div>
+          </div>
+          <picture>
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-xs.0b14a3f6333c4beead45.webp, https://static.yoomoney.ru/cards-client/media/picture-hce-xs-2x.9e2695042b105221ad53.webp 2x"
+              media="(max-width: 736px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-s.32f41786b8fbe705af8b.webp, https://static.yoomoney.ru/cards-client/media/picture-hce-s-2x.939c01e8361c7657d5bf.webp 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-m.deaefb25ec70307cdf34.webp, https://static.yoomoney.ru/cards-client/media/picture-hce-m-2x.84d2cae4d6e886e2dd66.webp 2x"
+              media="(min-width: 1024px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-xs.3a89c5486cf0c2d1dccd.png, https://static.yoomoney.ru/cards-client/media/picture-hce-xs-2x.426251cc11f23abbc4b2.png 2x"
+              media="(max-width: 736px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-s.d4d10bf5ac0717248aba.png, https://static.yoomoney.ru/cards-client/media/picture-hce-s-2x.cb86d84e14b68de0364f.png 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-hce-m.5bbb4e368115aa2ce58a.png, https://static.yoomoney.ru/cards-client/media/picture-hce-m-2x.cf397a225ae505aa42a4.png 2x"
+              media="(min-width: 1024px)" /><img
+              src="https://static.yoomoney.ru/cards-client/media/picture-hce-s.d4d10bf5ac0717248aba.png"
+              class="styled__StyledPicture-sc-18r34qq-4 jKMdFd" />
+          </picture>
+        </div>
+        <div class="styled__StyledPromoVirtual-sc-zq6ukz-0 fDXDzJ qa-promo-virtual">
+          <div class="styled__StyledContent-sc-zq6ukz-1 lwGJN">
+            <h2
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-colorPrimary styled__StyledTitle-sc-zq6ukz-2 gDBMDz qa-title mui-90n9vp">
+              Виртуальная карта «Мир» за 0 ₽</h2>
+            <div class="styled__StyledDescriptionsList-sc-zq6ukz-3 dOjEFL">
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-1 mui-nd66g3">
+                Можно получить мгновенно — и тут же начать пользоваться</p>
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-2 mui-nd66g3">
+                Подходит для онлайна и офлайна: добавьте карту в Mir Pay, чтобы платить на кассе и снимать наличные</p>
+              <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary qa-description-3 mui-nd66g3">
+                Кэшбэк до 5% — баллами, до 30% — рублями от партнёров «Мир» </p>
+            </div>
+            <div class="styled__StyledButtonWrapper-sc-zq6ukz-5 hcNyVa">
+              <div
+                class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 chByEO styled__StyledButtonTheme-sc-zq6ukz-7 fnquSW"><a
+                  class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-button mui-9ez1nc"
+                  tabindex="0" href="https://yoomoney.ru/cards/order/virtual/common?payment-system=mir">Получить
+                  виртуалку</a></div><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone MuiTypography-colorBrand styled__StyledLink-sc-zq6ukz-6 amuJy qa-link-more mui-57df3k"
+                href="https://yoomoney.ru/cards/virtual">Подробнее</a>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-xs.b04dc7d01ecbccccae3c.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-xs-2x.ddb014061510478785ab.webp 2x"
+              media="(max-width: 736px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-s.9c3255ec3968434d4276.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-s-2x.12260830d1a6000072af.webp 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-m.98c4c840240de6c45c90.webp, https://static.yoomoney.ru/cards-client/media/picture-virtual-m-2x.51ad8e93876757965896.webp 2x"
+              media="(min-width: 1024px)" type="image/webp" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-xs.d7886d46d891e478eacf.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-xs-2x.e5d500a2436a6dd959d9.png 2x"
+              media="(max-width: 736px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-s.94de489ba7b00c403a89.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-s-2x.2b238f9d1b12992e9088.png 2x"
+              media="(min-width: 737px) and (max-width: 1023px)" />
+            <source
+              srcSet="https://static.yoomoney.ru/cards-client/media/picture-virtual-m.0cc54eccf457e4e77215.png, https://static.yoomoney.ru/cards-client/media/picture-virtual-m-2x.84eb56d75a3998d61c3a.png 2x"
+              media="(min-width: 1024px)" /><img
+              src="https://static.yoomoney.ru/cards-client/media/picture-virtual-s.94de489ba7b00c403a89.png"
+              class="styled__StyledPicture-sc-zq6ukz-4 eoycYY" />
+          </picture>
+        </div>
+        <div class="styled__StyledSecondaryBlock-sc-1f701fv-0 hXJgIj qa-promo-momentary"><img
+            src="https://static.yoomoney.ru/cards-client/media/icon-momentary.db590f9728ceda4abc83.svg" width="51px"
+            height="51px" />
+          <div class="styled__StyledContent-sc-1f701fv-2 jztrSR">
+            <h2
+              class="MuiTypography-root MuiTypography-h2 MuiTypography-colorPrimary styled__StyledTitle-sc-1f701fv-1 kxEyZv qa-title mui-syut61">
+              Моментальная карта</h2>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary styled__StyledDescription-sc-1f701fv-3 bTvzBj qa-description mui-nd66g3">
+              Работает как обычная пластиковая карта, за покупки по ней тоже приходит кэшбэк — до 5% баллами (если вы
+              его
+              <a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineAlways MuiTypography-colorPrimary mui-ga6sui"
+                href="/loyalty" target="_blank">подключили</a>)<br /><br />На моменталке нет вашего имени, зато её не
+              нужно ждать: заберите в офисах ЮMoney
+            </p>
+            <div class="styled__StyledButtonWrapper-sc-1f701fv-4 eVYmaf"><a
+                class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-button mui-9ez1nc"
+                tabindex="0" href="/cards/activation">Активировать карту</a>
+              <a class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineNone MuiTypography-colorBrand styled__StyledLink-sc-1f701fv-5 eOJWjR qa-link-more mui-n77qnl"
+                href="/page?id=530424">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="styled__StyledSecondaryBlock-sc-1f701fv-0 hXJgIj qa-promo-multicurrency"><img
+            src="https://static.yoomoney.ru/cards-client/media/icon-multicurrency.998ac0987cc892164699.svg" width="51px"
+            height="51px" />
+          <div class="styled__StyledContent-sc-1f701fv-2 jztrSR">
+            <h2
+              class="MuiTypography-root MuiTypography-h2 MuiTypography-colorPrimary styled__StyledTitle-sc-1f701fv-1 kxEyZv qa-title mui-syut61">
+              Пакет «Мультивалютные карты»</h2>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary styled__StyledDescription-sc-1f701fv-3 bTvzBj qa-description mui-nd66g3">
+              Один пакет — для всех карт ЮMoney: рубли + 10 валют. Платите или снимайте — карта сама поймёт, какую
+              валюту выбрать</p>
+            <div class="styled__StyledButtonWrapper-sc-1f701fv-4 eVYmaf"><a
+                class="MuiTypography-root MuiTypography-body1 MuiLink-root MuiLink-underlineNone MuiTypography-colorBrand styled__StyledLink-sc-1f701fv-5 eOJWjR qa-link-more mui-n77qnl"
+                href="/account/multicurrency-promo">Подробнее</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="footer">
+      <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 hnUsMC">
+        <div class="HelpCenterMenu__StyledHelpCenterWrapper-sc-jknjuw-2 jeozFd qa-help-center-menu">
+          <div class="HelpCenterMenu__StyledHelpCenter-sc-jknjuw-0 iURsis qa-menu">
+            <div class="Icon__StyledIconWrapper-sc-1qmg3zv-1 iejWLH qa-threads"><svg width="24" height="24"
+                class="Icon__StyledIcon2-sc-1qmg3zv-0 gOLCeN">
+                <path
+                  d="M22 7.5c0-2-1.6-3.5-3.5-3.5h-13C3.6 4 2 5.6 2 7.5v6C2 15.4 3.6 17 5.5 17H7v2c0 1.4 1.1 2.5 2.5 2.5.7 0 1.3-.3 1.8-.7L15 17h3.5c1.9 0 3.5-1.6 3.5-3.5v-6zm-2 2.9v3.1c0 .8-.7 1.5-1.5 1.5h-4.3l-4.3 4.3c-.1.1-.2.1-.4.1-.3.1-.5-.1-.5-.4v-4H5.5c-.8 0-1.5-.7-1.5-1.5v-6C4 6.7 4.7 6 5.5 6h13c.8 0 1.5.7 1.5 1.5v2.9z">
+                </path>
+              </svg></div>
+            <div class="Icon__StyledIconWrapper-sc-1qmg3zv-1 jBTqui qa-faq"><svg width="24" height="24"
+                class="Icon__StyledIcon2-sc-1qmg3zv-0 gOLCeN">
+                <path
+                  d="M9.44847 7.56623C9.59751 7.11909 10.3318 6 11.9998 6c1.0275 0 1.6905.45036 2.1222.9957.4671.59006.6278 1.25005.6278 1.5043 0 .41865-.0529.82866-.2263 1.21886-.1686.37924-.4765.79784-1.0784 1.19904-.1988.1326-.3941.2413-.5953.3491l-.0924.0492c-.1666.0886-.3603.1916-.5274.2975-.2048.1299-.459.3171-.6575.5972-.2156.3043-.3227.6563-.3227 1.0391v3.5h2v-3.4132c.0138-.0096.0306-.0209.051-.0339.097-.0614.2087-.121.3741-.2092l.1195-.0638c.2167-.1162.4797-.261.7601-.4478.8981-.5988 1.4651-1.3052 1.7966-2.051.3266-.73476.3987-1.44975.3987-2.0311 0-.74575-.3393-1.83576-1.0597-2.7457C14.9343 4.79964 13.7223 4 11.9998 4 9.26773 4 7.90205 5.88091 7.5511 6.93377c-.17465.52395.10851 1.09027.63246 1.26491.52394.17465 1.09026-.10851 1.26491-.63245zM12.2498 20.5c.6903 0 1.25-.5596 1.25-1.25s-.5597-1.25-1.25-1.25c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25z">
+                </path>
+              </svg></div>
+          </div>
+        </div>
+        <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 kGUHwV"></div>
+        <footer class="styled__StyledFooter-sc-t8tyrr-0 eZWZXx qa-footer">
+          <div class="styled__StyledFooterWrap-sc-t8tyrr-1 dkTioD">
+            <div class="styled__StyledWrapperMobileApp-sc-t8tyrr-10 hTkSUT">
+              <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iKAqlQ">
+                <div class="Decorator__StyledDecorator-sc-12ji3ka-0 hWNLVm"><span display="inline-block"
+                    class="Text__StyledTextSpan-sc-9bqqn7-0 eWuLyS">ЮMoney в вашем смартфоне</span></div><a
+                  class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  lsp-1sdubjt"
+                  tabindex="0"
+                  href="https://promo.yoomoney.ru/app?utm_source=money&amp;utm_medium=referral&amp;utm_campaign=app&amp;utm_term=badge&amp;utm_content=footer">Подробнее</a>
+              </div>
+            </div>
+            <div class="styled__StyledAccordionContainer-sc-t8tyrr-2 iOusFh">
+              <div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Оплата услуг</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a
+                            href="/catalogue/phone?click_footer=mobilnaya_svyaz" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Мобильная связь</div>
+                          </a><a href="/catalogue/internet?click_footer=internet" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Интернет</div>
+                          </a><a href="/catalogue/zku?click_footer=zhkkh" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">ЖКХ</div>
+                          </a><a href="/debts?click_footer=shtrafy_gibdd" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Штрафы ГИБДД</div>
+                          </a><a href="/catalogue/fin?click_footer=kredity" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Кредиты</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Игры и программы</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a href="./games.html"
+                            target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Игры</div>
+                          </a><a href="./programmi.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Программы</div>
+                          </a><a href="./podarochnye-karty.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Подарочные карты</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Кэшбэк и акции</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a href="./cashback.html"
+                            target=" _self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Мгновенный кэшбэк</div>
+                          </a><a href="./skidki.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Скидки от партнёров</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Карты</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a
+                            href="./plastic-card.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Пластиковая</div>
+                          </a><a href="./virtual-card.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Виртуальная для онлайн-шопинга
+                            </div>
+                          </a><a href="./promo/bezcontact.htm" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Бесконтактная</div>
+                          </a><a href="./mir-card.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Виртуальная «Мир»</div>
+                          </a><a href="./multicurrency.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Мультивалютная</div>
+                          </a><a href="./all-card.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Все карты ЮMoney</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Переводы</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a href="./a2w.html"
+                            target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">В другой кошелёк</div>
+                          </a><a href="./a2c.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">На карту</div>
+                          </a><a href="./bank-account.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">На банковский счёт</div>
+                          </a><a href="./get.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Сбор денег</div>
+                          </a><a href="./payment-buttons.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">API Сбора денег</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qa-accordion lsp-l5za6s">
+                  <div>
+                    <div tabindex="0" role="button" aria-expanded="false">
+                      <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 kHJvvU qa-title lsp-19z6wwy">
+                        <span class="Text__StyledTextSpan-sc-9bqqn7-0 ghbQkB">Ещё</span><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP qa-icon lsp-z37akv">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd"
+                              d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div role="region" class="ShowMoreContent__StyledContentWrapper-sc-16h53ar-0 fxjSjj">
+                      <div class="ShowMoreContent__StyledContent-sc-16h53ar-1 ghTOgT">
+                        <div class="Decorator__StyledDecorator-sc-12ji3ka-0 bhiwYa qa-content"><a
+                            href="https://promo.yoomoney.ru/promo-self-employed?click_footer=samozanyatye"
+                            target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Самозанятые</div>
+                          </a><a href="https://promo.yoomoney.ru/invest?click_footer=investicii" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Инвестиции</div>
+                          </a><a href="./security.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Безопасность в интернете</div>
+                          </a><a href="/page?id=536344&amp;click_footer=zashchita_pokupatelya" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Защита покупателя</div>
+                          </a><a href="./legal.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Юридическая информация</div>
+                          </a><a href="/page?id=524406&amp;click_footer=press_centr" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Пресс-центр</div>
+                          </a><a href="https://donate.stream/yoostream?click_footer=yustream" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">ЮStream</div>
+                          </a><a href="./site-map.html" target="_self"
+                            class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk FooterAccordion__StyledLink-sc-17wc0jh-1 dVbFjY">
+                            <div class="FooterAccordion__StyledItem-sc-17wc0jh-0 gaZQir">Карта сайта</div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="styled__StyledSiteMapWrapper-sc-t8tyrr-3 bmgplj">
+              <div class="TplGrid__StyledTplGrid-sc-s55ie2-0 kRrxGI styled__StyledGrid-sc-frgkdk-2 ghKgcS qa-site-map">
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><a
+                    href="/catalogue?click_footer=oplata_uslug" target="_self"
+                    class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Оплата услуг</span></a>
+                  <div class="qa-site-map-section-content"><a href="/catalogue/phone?click_footer=mobilnaya_svyaz"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Мобильная связь</span></a><a
+                      href="/catalogue/internet?click_footer=internet" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Интернет</span></a><a
+                      href="/catalogue/zku?click_footer=zhkkh" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">ЖКХ</span></a><a
+                      href="/debts?click_footer=shtrafy_gibdd" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Штрафы ГИБДД</span></a><a
+                      href="/catalogue/fin?click_footer=kredity" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Кредиты</span></a></div>
+                </div>
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><a href="./digital-goods.html"
+                    target="_self"
+                    class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Игры и
+                      программы</span></a>
+                  <div class="qa-site-map-section-content"><a href="./games.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Игры</span></a><a href="./programmi.html"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Программы</span></a><a
+                      href="./podarochnye-karty.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Подарочные карты</span></a></div>
+                </div>
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><a href="./loyalty.html" target="_self"
+                    class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Кэшбэк и
+                      акции</span></a>
+                  <div class="qa-site-map-section-content"><a href="./cashback.html" target=" _self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Мгновенный кэшбэк</span></a><a
+                      href="./skidki.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Скидки от партнёров</span></a></div>
+                </div>
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><a href="/cards?click_footer=karty"
+                    target="_self"
+                    class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Карты</span></a>
+                  <div class="qa-site-map-section-content"><a href="./plastic-card.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Пластиковая</span></a><a
+                      href="./virtual-card.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Виртуальная для онлайн-шопинга</span></a><a
+                      href="./promo/bezcontact.htm" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Бесконтактная</span></a><a
+                      href="./mir-card.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Виртуальная «Мир»</span></a><a
+                      href="./multicurrency.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Мультивалютная</span></a><a
+                      href="./all-card.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Все карты ЮMoney</span></a></div>
+                </div>
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><a href="/transfer?click_footer=perevody"
+                    target="_self"
+                    class="FooterLink__StyledLink-sc-oo5dpb-0 gdMyPk styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Переводы</span></a>
+                  <div class="qa-site-map-section-content"><a href="./a2w.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">В другой кошелёк</span></a><a href="./a2c.html"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">На карту</span></a><a href="./bank-account.html"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">На банковский счёт</span></a><a
+                      href="./get.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Сбор денег</span></a><a
+                      href="./payment-buttons.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">API Сбора денег</span></a></div>
+                </div>
+                <div class="TplGrid__StyledTplGridFraction-sc-s55ie2-1 khePpU"><span
+                    class="Text__StyledTextSpan-sc-9bqqn7-0 cqQVwc styled__StyledSectionLink-sc-frgkdk-0 rhDwZ"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 bztnbT qa-site-map-section-title">Ещё</span></span>
+                  <div class="qa-site-map-section-content"><a href="./self-employed.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Самозанятые</span></a><a
+                      href="https://promo.yoomoney.ru/invest?click_footer=investicii" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Инвестиции</span></a><a href="./security.html"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Безопасность в интернете</span></a><a
+                      href="/page?id=536344&amp;click_footer=zashchita_pokupatelya" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Защита покупателя</span></a><a
+                      href="./legal.html" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Юридическая информация</span></a><a
+                      href="/page?id=524406&amp;click_footer=press_centr" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Пресс-центр</span></a><a
+                      href="https://donate.stream/yoostream?click_footer=yustream" target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">ЮStream</span></a><a href="./site-map.html"
+                      target="_self"
+                      class="FooterLink__StyledLink-sc-oo5dpb-0 jcNwtS styled__StyledSectionLink-sc-frgkdk-0 styled__StyledLink-sc-frgkdk-1 rhDwZ hwDHer"><span
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 hnrqbY">Карта сайта</span></a></div>
+                </div>
+              </div>
+              <div class="styled__StyledWrapper-sc-10uqa5d-0 kePjwi qa-mobile-promo">
+                <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iCbyjO">
+                  <div class="styled__StyledMobileAppImage-sc-10uqa5d-1 bCyRvy"></div>
+                </div>
+                <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iKAqlQ">
+                  <div class="Decorator__StyledDecorator-sc-12ji3ka-0 hWNLVm"><span display="inline-block"
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 boSTvO">ЮMoney в вашем смартфоне</span></div>
+                  <div class="Decorator__StyledDecorator-sc-12ji3ka-0 drYXBe"><a
+                      class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  lsp-1sdubjt"
+                      tabindex="0"
+                      href="https://promo.yoomoney.ru/app?utm_source=money&amp;utm_medium=referral&amp;utm_campaign=app&amp;utm_term=badge&amp;utm_content=footer">Подробнее</a>
+                  </div>
+                  <div class="styled__StyledQRImage-sc-10uqa5d-2 htxfDJ"></div>
+                </div>
+              </div>
+            </div>
+            <div class="styled__StyledBottomContainer-sc-t8tyrr-4 bEBAok">
+              <div class="styled__StyledBottomColumnLeft-sc-t8tyrr-5 iBoEEL">
+                <div class="styled__StyledMobileStoreBadges-sc-t8tyrr-6 iYCJVl">
+                  <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iKAqlQ">
+                    <div class="Decorator__StyledDecorator-sc-12ji3ka-0 hWNLVm"><span display="inline-block"
+                        class="Text__StyledTextSpan-sc-9bqqn7-0 eWuLyS">ЮMoney в вашем смартфоне</span></div><a
+                      class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  lsp-1sdubjt"
+                      tabindex="0"
+                      href="https://promo.yoomoney.ru/app?utm_source=money&amp;utm_medium=referral&amp;utm_campaign=app&amp;utm_term=badge&amp;utm_content=footer">Подробнее</a>
+                  </div>
+                </div>
+                <div class="FooterSocialIcons__StyledSocialIcons-sc-saxupj-0 eswajt qa-social-icons"><a aria-label="vk"
+                    href="https://vk.com/yoomoney" target="_blank" rel="noopener"
+                    class="FooterSocialIcons__StyledSocialIcon-sc-saxupj-1 bDJVuL">
+                    <div class="SocialIcon2__StyledRoundDiv-sc-1w7qrl5-1 eMBbiE"><svg viewBox="0 0 24 24"
+                        aria-hidden="true" class="SocialIcon2__StyledSocialIcon2-sc-1w7qrl5-0 kunuOV">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M3.406 3.406C2 4.812 2 7.074 2 11.6v.8c0 4.525 0 6.788 1.406 8.194C4.812 22 7.074 22 11.6 22h.8c4.525 0 6.788 0 8.194-1.406C22 19.188 22 16.925 22 12.4v-.8c0-4.526 0-6.788-1.406-8.194C19.188 2 16.925 2 12.4 2h-.8C7.074 2 4.812 2 3.406 3.406zm1.969 4.677c.108 5.2 2.708 8.325 7.267 8.325h.258v-2.975c1.675.167 2.942 1.392 3.45 2.975h2.367c-.65-2.366-2.359-3.675-3.425-4.175 1.066-.616 2.566-2.116 2.925-4.15h-2.15c-.467 1.65-1.85 3.15-3.167 3.292V8.083h-2.15v5.767c-1.333-.333-3.017-1.95-3.092-5.767H5.375z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                  </a><a aria-label="ok" href="https://ok.ru/yoomoney" target="_blank" rel="noopener"
+                    class="FooterSocialIcons__StyledSocialIcon-sc-saxupj-1 bDJVuL">
+                    <div class="SocialIcon2__StyledRoundDiv-sc-1w7qrl5-1 eMBbiE"><svg viewBox="0 0 24 24"
+                        aria-hidden="true" class="SocialIcon2__StyledSocialIcon2-sc-1w7qrl5-0 kunuOV">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M11.985 5.025c1.221 0 2.214.958 2.214 2.136 0 1.178-.993 2.137-2.214 2.137-1.22 0-2.213-.96-2.213-2.137 0-1.178.994-2.136 2.213-2.136zm0 7.295c2.95 0 5.347-2.313 5.347-5.16 0-2.845-2.397-5.16-5.347-5.16C9.037 2 6.64 4.315 6.64 7.16c0 2.847 2.398 5.16 5.346 5.16zm2.177 4.213c1.097-.24 2.146-.66 3.105-1.24.732-.446.952-1.38.491-2.086-.46-.708-1.427-.92-2.16-.476a6.996 6.996 0 01-7.198 0c-.733-.444-1.7-.232-2.16.476a1.482 1.482 0 00.49 2.085c.96.581 2.01 1 3.105 1.24L6.846 19.42a1.476 1.476 0 000 2.139c.307.294.707.442 1.108.442.401 0 .802-.148 1.108-.442L12 18.72l2.94 2.835c.61.59 1.602.59 2.213 0a1.473 1.473 0 000-2.137l-2.989-2.886"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                  </a><a aria-label="telegram" href="https://t.me/yoomoneynews" target="_blank" rel="noopener"
+                    class="FooterSocialIcons__StyledSocialIcon-sc-saxupj-1 bDJVuL">
+                    <div class="SocialIcon2__StyledRoundDiv-sc-1w7qrl5-1 eMBbiE"><svg viewBox="0 0 24 24"
+                        aria-hidden="true" class="SocialIcon2__StyledSocialIcon2-sc-1w7qrl5-0 kunuOV">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-9.641-2.618c-.973.405-2.917 1.242-5.832 2.513-.474.188-.722.372-.744.552-.038.304.343.424.862.587l.219.07c.51.166 1.197.36 1.554.368.324.007.685-.127 1.084-.4 2.724-1.84 4.13-2.769 4.218-2.789.063-.014.15-.032.208.02.058.052.052.15.046.177-.038.161-1.534 1.552-2.308 2.271-.241.225-.412.384-.447.42-.079.082-.159.159-.235.233-.475.457-.83.8.02 1.36.408.27.734.492 1.06.714.356.242.711.484 1.17.785.118.077.23.156.339.234.414.296.786.56 1.246.519.267-.025.543-.276.683-1.026.332-1.77.983-5.608 1.133-7.19a1.764 1.764 0 00-.016-.393.421.421 0 00-.143-.27c-.12-.098-.304-.118-.387-.117-.376.007-.953.207-3.73 1.362z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                  </a><a aria-label="zen" href="https://zen.yandex.ru/yoomoney" target="_blank" rel="noopener"
+                    class="FooterSocialIcons__StyledSocialIcon-sc-saxupj-1 bDJVuL">
+                    <div class="SocialIcon2__StyledRoundDiv-sc-1w7qrl5-1 eMBbiE"><svg viewBox="0 0 24 24"
+                        aria-hidden="true" class="SocialIcon2__StyledSocialIcon2-sc-1w7qrl5-0 kunuOV">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M2.002 11.798c4.113-.048 6.415-.317 7.947-1.85 1.532-1.531 1.802-3.833 1.849-7.946-5.362.106-9.69 4.433-9.796 9.796zm10.393-9.79c.047 4.109.317 6.41 1.848 7.94 1.509 1.51 3.763 1.794 7.755 1.847-.106-5.297-4.331-9.583-9.603-9.787zm9.597 10.39c-3.989.053-6.241.338-7.749 1.845-1.507 1.508-1.792 3.76-1.846 7.75a10 10 0 009.595-9.596zm-10.197 9.6c-.053-3.993-.338-6.247-1.846-7.755-1.531-1.531-3.832-1.8-7.941-1.848.204 5.272 4.49 9.497 9.787 9.603z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                  </a><a aria-label="vc" href="https://vc.ru/yoomoney" target="_blank" rel="noopener"
+                    class="FooterSocialIcons__StyledSocialIcon-sc-saxupj-1 bDJVuL">
+                    <div class="SocialIcon2__StyledRoundDiv-sc-1w7qrl5-1 eMBbiE"><svg viewBox="0 0 24 24"
+                        aria-hidden="true" class="SocialIcon2__StyledSocialIcon2-sc-1w7qrl5-0 kunuOV">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm2.002-4.765c.278.201.615.31.954.322.46.018.923-.137 1.254-.468.126-.126.23-.268.317-.423l.004-.007a.138.138 0 01.026-.04l.12.794H18v-.79h-.64l-.031-4.039h-1.73v.818h.855v1.922c0 .391-.133.777-.414 1.059-.29.291-.64.436-1.058.382-.655-.084-.824-.74-.824-1.298v-2.883h-1.613c-.008.044-.006.789.003.82h.735v2.167c0 .641.17 1.267.72 1.664zM6 16.583h.855l.002.843H6v-.843zm11.685-5.996l-.657-.496-.022.025c-.687.817-1.964.887-2.66.032-.567-.697-.478-1.8.165-2.422a1.604 1.604 0 011-.451c.155-.014.31-.007.464.012.247.03.504.122.719.248l.007.842h.83l-.002-.654.003-.536a.049.049 0 00-.023-.048 1.846 1.846 0 01-.094-.072 2.288 2.288 0 00-.556-.327c-1.012-.423-2.219-.3-3.024.474-.637.612-.927 1.563-.712 2.418.387 1.533 2.233 2.422 3.68 1.7a2.549 2.549 0 00.878-.739l.004-.006zM8.222 7.431h-.857l-.004-.813 1.534-.003 1.227 3.618 1.297-3.62h1.438v.818h-.804l-1.55 4.101H9.71l-1.488-4.1zm.307 9.191h-.807v.787h3.765v-.773H9.392l-.001-1.87c0-.104.012-.208.038-.308a1.57 1.57 0 01.501-.827 1.272 1.272 0 01.851-.314l-.003.732h.825l-.003-1.483h-.217c-.156 0-.31-.001-.466.001-.094.002-.187.01-.28.024-.378.06-.702.227-.976.492a2.108 2.108 0 00-.331.417l-.004.006c-.005.01-.01.02-.026.025-.02-.317-.055-.946-.055-.946H7.722v.746h.807v3.291z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                  </a></div>
+              </div>
+              <div display="flex" class="Decorator__StyledDecorator-sc-12ji3ka-0 ekuwnn"><a href="tel:+74951978686"
+                  class="styled__StyledLink-sc-6g2qrm-0 gpDJrH qa-contact-phone">+7 495 197-86-86</a><a
+                  href="https://yoomoney.ru/help?_openstat=template%3Bifooter%3Bhelp%3Bhelp" target="_self"
+                  class="styled__StyledLink-sc-6g2qrm-0 gpDJrH qa-contact-help">Помощь</a><a
+                  href="https://yoomoney.ru/contacts?_openstat=template%3Bifooter%3Bcontacts%3Btel%3Boffices"
+                  target="_self" class="styled__StyledLink-sc-6g2qrm-0 gpDJrH qa-contact-office">Офисы</a><a
+                  href="https://jobs.yoomoney.ru/?_openstat=template%3Bifooter%3Bvisit%3Bjob" target="_blank"
+                  class="styled__StyledLink-sc-6g2qrm-0 gpDJrH qa-contact-job">Вакансии</a><a
+                  href="https://yookassa.ru/?_openstat=template%3Bifooter2%3Bget%3Bkassa" target="_blank"
+                  class="styled__StyledLink-sc-6g2qrm-0 gpDJrH qa-contact-kassa">ЮКassa для бизнеса</a></div>
+              <div class="styled__StyledCopyrightContainer-sc-t8tyrr-8 kohFJx">
+                <div aria-label="Переключить язык"
+                  class="styled__StyledLangSwitcherWrapper-sc-kvs82x-0 fccTYv qa-lang-switcher styled__StyledLangSwitcher-sc-t8tyrr-9 glUORR">
+                  <div class="LangSwitcher__StyledLangSwitcher-sc-66t8h4-1 hAYUFB">
+                    <div class="LangSwitcher__StyledLangWrapper-sc-66t8h4-2 euzNJE qa-lang-switcher-selected-lang">
+                      <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 bTTkpw qa-lang-switcher-flag"
+                        data-qa-flag-name="ru"></div>
+                      <div class="LangSwitcher__StyledName-sc-66t8h4-0 hBfXWF">Ru</div>
+                    </div>
+                    <div class="LangSwitcher__StyledDropdown-sc-66t8h4-3 pwPMV">
+                      <ul class="MuiList-root MuiList-padding LangSwitcher__StyledMenu-sc-66t8h4-4 hhzvzO lsp-1kvk99m"
+                        role="menu" tabindex="-1"><a class="MuiMenuItem-root MuiButtonBase-root lsp-1at315b"
+                          tabindex="0" role="menuitem"
+                          href="https://yoomoney.ru/yooid/profile/set-lang?language=ru&amp;returnUrl="><span selected=""
+                            class="LangSwitcherLang__StyledLangWrapper-sc-15k6gji-0 ffGBRO qa-lang-switcher-lang"
+                            data-qa-lang-name="Ru">
+                            <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 bTTkpw qa-lang-switcher-flag"
+                              data-qa-flag-name="ru"></div><span
+                              class="LangSwitcherLang__StyledName-sc-15k6gji-1 gWmYtL">Ru</span>
+                          </span></a><a class="MuiMenuItem-root MuiButtonBase-root lsp-1at315b" tabindex="-1"
+                          role="menuitem"
+                          href="https://yoomoney.ru/yooid/profile/set-lang?language=en&amp;returnUrl="><span
+                            class="LangSwitcherLang__StyledLangWrapper-sc-15k6gji-0 knWQWq qa-lang-switcher-lang"
+                            data-qa-lang-name="En">
+                            <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 kEYwDV qa-lang-switcher-flag"
+                              data-qa-flag-name="gb"></div><span
+                              class="LangSwitcherLang__StyledName-sc-15k6gji-1 gWmYtL">En</span>
+                          </span></a></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="styled__StyledCopyright-sc-191fnhu-0 joobOH qa-copyright">© 2023 ООО НКО «<a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone MuiTypography-colorLink lsp-k50klf"
+                    href="https://yoomoney.ru/about"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 gMXBWK">ЮМани</span></a>». Лицензия Банка России № 3510‑К
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script>!function () { if (typeof Symbol === 'function') return; var p = document.getElementsByTagName('script')[0]; var s = document.createElement('script'); s.src = 'https://static.yoomoney.ru/files-front/libs/core-js-symbol/3.21.1/core-js-symbol.js)'; p.parentNode.insertBefore(s, p); }();</script>
+  <script crossorigin="anonymous"
+    src="https://static.yoomoney.ru/files-front/libs/react/17.0.2/react-with-dom.min.js"></script>
+  <script>window.__data__ = { "isUnauthorizedUser": false, "tariffs": { "freeCash": 10000, "cashCommission": "3%", "freeSBP": 100000, "cashback": "1%", "categoryCashback": "5%", "partnersCashback": "10%", "mirCashback": "30%", "multicurrency": 1, "cardExpiryDate": "5", "virtualCardExpiryDate": "5" }, "blocksVisibility": { "plastic": true, "hce": true, "virtual": true, "virtualOnline": true }, "minimalCardPrice": { "value": 399, "alphabeticCurrency": "RUB" }, "isPromotionCardAvailable": false, "loyaltyProgram": { "isLoyaltyProgramAvailable": true, "bonusAward": 399, "expirePeriod": "P45D", "thresholdSum": { "value": 15000, "alphabeticCurrency": "RUB" } } }; window.__urls__ = { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "yoobusiness": "https:\u002F\u002Fapp.yoobusiness.ru", "cardsClient": "https:\u002F\u002Fyoomoney.ru", "mainBalancer": "https:\u002F\u002Fyoomoney.ru", "emit": "https:\u002F\u002Fcardservice.yoomoney.ru", "default": "https:\u002F\u002Fyoomoney.ru" }; window.__layoutData__ = { "appUrls": { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "avatar": "https:\u002F\u002Fyoomoney.ru", "default": "https:\u002F\u002Fyoomoney.ru", "static": "https:\u002F\u002Fstatic.yoomoney.ru" }, "counters": { "yametrics": [152220, 62147710, 47149527, 45374142], "gtag": "DC-10075061", "vkPixel": "VK-RTRG-1032781-eXdJD", "vkPixelSmm": "VK-RTRG-1192084-6ykob", "mail": "3226222" }, "threads": { "connectionSettings": { "history": { "url": "https:\u002F\u002Fccomni-ds.yoomoney.ru\u002Fhistory\u002Fv5", "count": 20 }, "uid": "bb2a4811a689953be806fa2026ffe592", "apiUrl": "https:\u002F\u002Fccomni-ds.yoomoney.ru", "datastore": "https:\u002F\u002Fccomni-ds.yoomoney.ru\u002Ffiles", "websocket": "wss:\u002F\u002Fccomni-gate.yoomoney.ru\u002Fsocket" } }, "publicUrlPath": "https:\u002F\u002Fstatic.yoomoney.ru\u002Flayout-service-portal\u002F", "balance": { "rub": { "availableAmount": 0, "currencyCode": 643, "isSumVisible": true } }, "phoneNumber": "+7 495 197-86-86", "language": { "currentLanguage": "ru" }, "secretKey": "u85f6399683406522fafc34597e0594a6", "sk": "994f8764c43b8031118598445f7a94ddd15c3252:1676432077931", "promo": { "img": "\u002Fi\u002FYooKassa_logo_60x60.svg", "text": "Онлайн-платежи для бизнеса. &#10;ЮKassa", "href": "https:\u002F\u002Fyookassa.ru\u002F?_openstat=template;ifooter;get;kassa", "alt": "YooKassa" }, "user": { "uid": "2368008745199517", "accountId": "4100118107975129", "userName": null, "avatarId": null, "avatarSource": null, "accountStatus": "anonymous", "isGdprAccepted": true, "hasMobileApp": false, "authHost": "https:\u002F\u002Fyoomoney.ru\u002Fyooid\u002F", "accountSynonym": "ehnu4zaDRP9ptqJttStpFVBaXB5mKx8xwPf2mDflFCs=", "maskedEmail": "jnas***in@gmail.com", "maskedPhone": "99670*****74", "isEmailLinked": true }, "menu": [{ "name": "shops", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "transfers", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "gamesAndServices", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "bankCards", "active": true, "curtain": { "links": [[{ "href": "\u002Fcards\u002Fplastic", "text": "Пластиковая", "metric": "HEADMENU_CLICK_CARDS_PLASTIC" }, { "href": "\u002Fcards\u002Fonlinevirtual", "text": "Виртуальная для онлайн-шопинга", "metric": "HEADMENU_CLICK_CARDS_VIRT_ONL" }, { "href": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fhce-card", "text": "Бесконтактная", "metric": "HEADMENU_CLICK_CARDS_NONCONTACT" }, { "href": "\u002Fcards\u002Fvirtual", "text": "Виртуальная «Мир»", "metric": "HEADMENU_CLICK_CARDS_VIRT" }, { "href": "\u002Faccount\u002Fmulticurrency-promo", "text": "Мультивалютная", "metric": "HEADMENU_CLICK_CARDS_MULTICURRENCY" }, { "href": "\u002Fcards\u002Fpromo", "text": "Все карты ЮMoney", "metric": "HEADMENU_CLICK_CARDS_ALL_CARDS" }], [{ "href": "\u002Fcards\u002Factivation", "text": "Активировать новую", "iconName": "add-circle", "metric": "HEADMENU_CLICK_CARDS_NEW" }]], "urls": { "bankCards": "\u002Fcards", "metric": "HEADMENU_CLICK_CARDS_MYCARDS" } }, "isBeta": false, "isIndicatorActive": false, "userTags": [] }, { "name": "discountsAndBonuses", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "receiveMoney", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "marketing", "text": "ЮVillage", "colorText": "#EE0000", "url": "\u002Fyoovillage\u002Fpromo?utm_source=money&utm_campaign=yoovillage&utm_medium=banner&utm_content=portal_shapka", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }], "experiments": {}, "smartBanner": { "smartBannerPaths": ["\u002Fstart", "\u002Faccount", "\u002Faccount\u002Fmulticurrency-promo\u002F", "\u002Fannually-confirmation\u002Fsuccess", "\u002Fcard\u002Fcard-payment\u002Factivation-data-error.xml", "\u002Fcard\u002Fcard-payment\u002Fcancel-check.xml", "\u002Fcards", "\u002Fcards\u002F", "\u002Fcards\u002Fissue\u002Fsuccess", "\u002Fglobalmno?", "\u002Fkeyterms", "\u002Flegal", "\u002Floyalty", "\u002Fpage?id=525698", "\u002Fpage?id=527708", "\u002Fpage?id=529499", "\u002Fpage?id=529934", "\u002Fpage?id=532005", "\u002Fpage?id=532450", "\u002Fpay\u002Fpage?id=522764", "\u002Fpay\u002Fpage?id=531940", "\u002Fpayments\u002Fcheckout\u002Fsuccess", "\u002Fpayments\u002Fexternal\u002Fsuccess", "\u002Fpfm\u002Fanalytics", "\u002Fsettings", "\u002Fsettings\u002F", "\u002Funsupported-browser?", "\u002Fcards\u002Fyacard", "\u002Fcards\u002Fvirtual", "\u002Fdigital-goods", "\u002Fdigital-goods\u002Fgames", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002F*", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002F157297", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002F157293", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002F526303", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igri-ot-electronis-arts\u002F528924", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fonlaien-igri\u002F525001", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fportali-i-servisi\u002F525171", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-konsoli\u002F528543", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igri-activision-blizzard\u002F531836", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fdrugie-populyarnie-tovari\u002F529843", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fkino-i-cifrovoe-tv\u002F529838", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-action-i-shuteri\u002F525002", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-drugoe\u002F528110", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fmuzika\u002F529839", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-antivirusi-i-zashita\u002F526304", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fknigi-aksessuari-podarki\u002F529841", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-priklyucheniya\u002F525006", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-strategii\u002F525005", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-rolevie-igri\u002F525003", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-simulyatori\u002F525008", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-kazualnie\u002F525000", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-ofisnie-programmi\u002F526308", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-sportivnie-\u002F525007", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-graficheskie-redaktori\u002F528087", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-gonki\u002F525004", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igrovie-artefakti\u002F525265", "\u002Ftransfers\u002Fsuccess", "\u002Ftopup\u002Fmobile\u002Fsuccess", "\u002Fcashback-game", "\u002Fcards\u002Finfo\u002F"], "smartBannerEnabled": true }, "promoPopup": { "marketingSubscriptionPopupEnabled": true, "marketingSubscriptionPopupPaths": [{ "url": "\u002Fmain", "blockId": "marketing_subscription_popup" }], "desktop": { "promoPopupPaths": ["\u002Factions", "\u002Fcatalogue", "\u002Fcatalogue\u002F*", "\u002Fmain", "\u002Fpromo"], "promoPopupEnabled": true }, "mobile": { "promoPopupPaths": ["\u002Factions", "\u002Fcatalogue", "\u002Fcatalogue\u002F*", "\u002Fmain", "\u002Fpromo\u002F*", { "url": "\u002Ftransfer\u002Fprocess\u002Fsuccess", "blockId": "marketing_mobile_transfers_popup" }, { "url": "\u002Fpayments\u002Finternal\u002Fsuccess", "blockId": "marketing_mobile_payments_popup" }], "promoPopupEnabled": true }, "surveyPopupEnabled": true, "surveyPopupPaths": [{ "url": "\u002Fmain", "blockId": "surveys" }, { "url": "\u002Fcatalogue", "blockId": "surveys" }, { "url": "\u002Ftransfer", "blockId": "surveys" }, { "url": "\u002Fdigital-goods", "blockId": "surveys" }, { "url": "\u002Fget", "blockId": "surveys" }, { "url": "\u002Floyalty", "blockId": "surveys" }] }, "marketingPixelsAllowedUrls": { "gtag": ["\u002F", "\u002Fmain", "\u002Fcatalogue", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Fdigital-goods\u002Fgames", "\u002Fid", "\u002Fquickpay\u002F*", "\u002Fcardlink\u002Fsuccess"], "mail": ["\u002F", "\u002Fcatalogue", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Fdigital-goods\u002Fgames", "\u002Fid", "\u002Fquickpay\u002F", "\u002Fcardlink\u002Fsuccess", "\u002Fpayments\u002Finternal\u002Fsuccess", "\u002Ftransfer\u002Fprocess\u002Fland3ds", "\u002Ftransfer\u002Fprocess\u002Fsuccess"], "vkSmm": ["\u002F", "\u002Fmain", "\u002Fdigital-goods", "\u002Floyalty", "\u002Fspending-points", "\u002Fpromo", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Ftransfer", "\u002Fcatalogue", "\u002Ftransfer"] }, "siteMap": { "default": [{ "title": "Оплата услуг", "link": "\u002Fcatalogue?click_footer=oplata_uslug", "content": [{ "text": "Мобильная связь", "link": "\u002Fcatalogue\u002Fphone?click_footer=mobilnaya_svyaz" }, { "text": "Интернет", "link": "\u002Fcatalogue\u002Finternet?click_footer=internet" }, { "text": "ЖКХ", "link": "\u002Fcatalogue\u002Fzku?click_footer=zhkkh" }, { "text": "Штрафы ГИБДД", "link": "\u002Fdebts?click_footer=shtrafy_gibdd" }, { "text": "Кредиты", "link": "\u002Fcatalogue\u002Ffin?click_footer=kredity" }] }, { "title": "Игры и программы", "link": "\u002Fdigital-goods?click_footer=igry_i_programmy", "content": [{ "text": "Игры", "link": "\u002Fdigital-goods\u002Fgames?click_footer=igry" }, { "text": "Программы", "link": "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002F526303?click_footer=programmy" }, { "text": "Подарочные карты", "link": "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002F157293?click_footer=podarochnye_karty" }] }, { "title": "Кэшбэк и акции", "link": "\u002Floyalty?click_footer=keshbek_i_akcii", "content": [{ "text": "Мгновенный кэшбэк", "link": "\u002Floyalty?click_footer=mgnovennyj_keshbek" }, { "text": "Скидки от партнёров", "link": "\u002Fpromo?click_footer=skidki_ot_partnyorov" }] }, { "title": "Карты", "link": "\u002Fcards?click_footer=karty", "content": [{ "text": "Пластиковая", "link": "\u002Fcards\u002Fplastic?click_footer=plastikovaya" }, { "text": "Виртуальная для онлайн-шопинга", "link": "\u002Fcards\u002Fonlinevirtual?click_footer=virtualnaya_dlya_onlajn_shopinga" }, { "text": "Бесконтактная", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fhce-card?click_footer=beskontaktnaya" }, { "text": "Виртуальная «Мир»", "link": "\u002Fcards\u002Fvirtual?click_footer=virtualnaya_«mir»" }, { "text": "Мультивалютная", "link": "\u002Faccount\u002Fmulticurrency-promo?click_footer=multivalyutnaya" }, { "text": "Все карты ЮMoney", "link": "\u002Fcards\u002Fpromo?click_footer=vse_karty_yumoney" }] }, { "title": "Переводы", "link": "\u002Ftransfer?click_footer=perevody", "content": [{ "text": "В другой кошелёк", "link": "\u002Ftransfer\u002Fa2w?click_footer=v_drugoj_koshelyok" }, { "text": "На карту", "link": "\u002Ftransfer\u002Fa2c?click_footer=na_kartu" }, { "text": "На банковский счёт", "link": "\u002Fwithdraw\u002Fbank-account?click_footer=na_bankovskij_schyot" }, { "text": "Сбор денег", "link": "\u002Fget?click_footer=sbor_deneg" }, { "text": "API Сбора денег", "link": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg" }] }, { "title": "Ещё", "content": [{ "text": "Самозанятые", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fpromo-self-employed?click_footer=samozanyatye", "forAuthLink": "\u002Fself-employed?from-portal-shell=true" }, { "text": "Инвестиции", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Finvest?click_footer=investicii" }, { "text": "Безопасность в интернете", "link": "\u002Fsecurity?click_footer=bezopasnost_v_internete" }, { "text": "Защита покупателя", "link": "\u002Fpage?id=536344&click_footer=zashchita_pokupatelya" }, { "text": "Юридическая информация", "link": "\u002Flegal?click_footer=yuridicheskaya_informaciya" }, { "text": "Пресс-центр", "link": "\u002Fpage?id=524406&click_footer=press_centr" }, { "text": "ЮStream", "link": "https:\u002F\u002Fdonate.stream\u002Fyoostream?click_footer=yustream" }, { "text": "Карта сайта", "link": "\u002Fsite-map?click_footer=karta_sajta" }] }] }, "deviceInfo": { "mobileAppBadges": ["app-store", "google-play"] }, "smartBannerOffers": [], "staticParams": {} }; window.__language__ = { "id": "ru", "name": "ru" }; window.__secretKey__ = "e9d2841025d3a62cacdc9df57101f00802c456fa:1676432077795";</script>
+  <div>
+    <script src="https://static.yoomoney.ru/layout-service-portal/portal.ru.b572440d5ee0bfc94e75c9bdd2eb21f1.js"
+      crossorigin="anonymous"></script>
+    <script src="https://static.yoomoney.ru/layout-service-portal/portal.879e4e205e4d0161737d.js"
+      crossorigin="anonymous"></script>
+  </div>
+  <script crossorigin="anonymous"
+    src="https://static.yoomoney.ru/cards-client/marketplace.ru.27980b94af2c7d9193412e5baa36b7d4.js"></script>
+  <script crossorigin="anonymous"
+    src="https://static.yoomoney.ru/cards-client/marketplace.3bb5f44dbffdf1fcd64b.js"></script>
+  <link rel="stylesheet" href="./css/grandbazar.css">
+</body>
+
+</html>

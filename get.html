@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Сбор денег и приём платежей — ЮMoney</title>
+  <meta name="description" content="В сервисе ЮMoney вы можете собирать деньги и принимать платежи." />
+  <meta name="og:image" content="https://static.yoomoney.ru/files-front/social/og-yoomoney-1.0.0.png" />
+  <meta name="og:image:secure_url" content="https://static.yoomoney.ru/files-front/social/og-yoomoney-1.0.0.png" />
+  <meta name="og:image:type" content="image/png" />
+  <meta name="og:image:width" content="1624" />
+  <meta name="og:image:height" content="850" />
+  <meta name="og:image:alt" content="Yoomoney logo" />
+  <meta name="og:title" content="ЮMoney" />
+  <meta name="og:description" content="" />
+  <meta name="og:url" content="" />
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://static.yoomoney.ru/files-front/head-resources/wallet/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://static.yoomoney.ru/files-front/head-resources/wallet/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://static.yoomoney.ru/files-front/head-resources/wallet/favicon-16x16.png" />
+  <link rel="manifest" href="https://static.yoomoney.ru/files-front/head-resources/wallet/site.webmanifest" />
+  <link rel="mask-icon" color="#8b3ffd"
+    href="https://static.yoomoney.ru/files-front/head-resources/wallet/safari-pinned-tab.svg" />
+  <meta name="msapplication-TileColor" content="#8b3ffd" />
+  <meta name="msapplication-config"
+    content="https://static.yoomoney.ru/files-front/head-resources/wallet/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <script
+    nonce="HmJqxF4wr+BW8kf4iACLoQ==">window.publicUrlPath = 'https://static.yoomoney.ru/transfers-client/';</script>
+  <script
+    nonce="HmJqxF4wr+BW8kf4iACLoQ==">(function () { var n = 0; var LIMIT = 10; window.onerror = function (message, url, line, col, error) { var req = new XMLHttpRequest(); var stack = error && error.stack || ''; if (req && n < LIMIT) { n += 1; req.open('POST', '/transfer/platform/client-errors', true); req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); req.send('url=' + encodeURIComponent(location.href) + '&message=' + encodeURIComponent(message) + '&stacktrace=' + encodeURIComponent(stack) + '&userAgent=' + encodeURIComponent(navigator.userAgent)); } }; })();</script>
+</head>
+
+<body class="styled__StyledBody-sc-1uyafiu-0 lfabII">
+  <div>
+    <div id="header">
+      <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 hnUsMC">
+        <div class="styled__StyledWrapper-sc-1qjrhaj-0 eaTgAx"></div>
+        <div class="styled__StyledHeader-sc-x0c06y-0 jWDxag">
+          <div class="styled__StyledHeaderWrapper-sc-x0c06y-1 iiZqQy qa-header-wrapper">
+            <div class="styled__StyledHeaderBox-sc-x0c06y-2 dSBkKv header-fragment">
+              <div class="styled__StyledServiceLogoWrapper-sc-x0c06y-3 PEIZt"><a aria-label="Главная страница"
+                  href="/?_openstat=template%3Bimenu%3Blogo" tabindex="-1"
+                  class="styled__StyledServiceLogo-sc-14ms6wa-0 kGLkTi qa-service-logo">
+                  <div class="styled__StyledLogo-sc-172ybhd-0 btMBAl"><svg width="129" height="27" viewBox="0 0 129 27"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="YooMoneyLogoBrandColor"
+                        d="M24.5225 0C17.0035 0 11.0225 6.06646 11.0225 13.5C11.0225 21.019 17.0889 27 24.5225 27C31.956 27 38.0225 20.9335 38.0225 13.5C38.1079 6.06646 31.956 0 24.5225 0ZM24.5225 18.5411C21.7883 18.5411 19.4813 16.2342 19.4813 13.5C19.4813 10.7658 21.7883 8.45886 24.5225 8.45886C27.2566 8.45886 29.5636 10.7658 29.5636 13.5C29.5636 16.2342 27.3421 18.5411 24.5225 18.5411Z">
+                      </path>
+                      <path class="YooMoneyLogoBrandColor" d="M11.0222 3.93005V23.5819H6.1519L0 3.93005H11.0222Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M124.917 7.43433L121.926 14.7824C121.841 14.8679 121.841 15.0388 121.841 15.1242L121.755 15.2951L121.67 15.1242C121.67 15.0388 121.584 14.8679 121.584 14.7824L118.594 7.43433H114.749L119.79 19.9944L117.654 24.7793H121.499L128.591 7.43433H124.917Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M96.5505 8.11703C95.867 7.60437 95.0125 7.2626 93.9872 7.17716C92.2784 7.00627 90.6549 7.60438 89.5442 8.71513V7.34805H86.041V19.9082H89.5442V13.3291C89.5442 11.8765 89.8005 11.4493 90.0568 11.1075C90.4841 10.424 91.253 10.0822 92.1929 10.0822C93.1328 10.0822 93.9872 10.5094 94.4144 11.193C94.6708 11.7056 94.7562 12.3892 94.7562 12.731C94.7562 13.8417 94.7562 19.9082 94.7562 19.9082H98.2594V12.3037C98.2594 10.3385 97.6613 8.97146 96.5505 8.11703Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M79.3763 7.5197C77.6674 6.9216 75.7877 7.00704 74.0788 7.77603C72.9681 8.28869 71.9428 9.14312 71.3447 10.2539C70.7466 11.1937 70.4902 12.39 70.4902 13.6716C70.4902 14.9532 70.7466 16.1494 71.3447 17.0893C71.9428 18.0292 72.7117 18.8836 73.7371 19.3963C74.7624 19.9089 75.9586 20.2507 77.0693 20.2507C77.6674 20.2507 78.2655 20.1653 78.8637 19.9944C79.3763 19.8235 79.889 19.6526 80.4016 19.3963C81.4269 18.7982 82.2814 18.0292 82.794 17.0893C83.3921 16.1494 83.6485 14.9532 83.6485 13.6716C83.7339 10.852 82.1105 8.45957 79.3763 7.5197ZM80.4016 13.8425C80.3162 14.9532 79.9744 15.8931 79.2909 16.4912C78.7782 16.9184 78.0092 17.1748 77.0693 17.2602C76.1295 17.2602 75.4459 17.0039 74.8478 16.4912C74.1643 15.8931 73.8225 14.9532 73.7371 13.8425C73.6516 12.5608 74.1643 11.5355 75.1042 10.852C75.6168 10.5102 76.3004 10.2539 76.9839 10.2539C77.7529 10.2539 78.351 10.5102 78.9491 10.852C79.9744 11.4501 80.4871 12.5608 80.4016 13.8425Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M66.4743 8.11712C65.7907 7.60446 64.9363 7.26269 63.911 7.17725C63.7401 7.17725 63.4838 7.17725 63.3129 7.17725C61.9458 7.17725 60.7496 7.77535 59.7243 8.97155L59.5534 9.22788H59.2116C58.9553 8.80066 58.6135 8.4589 58.2717 8.20257C57.5882 7.68991 56.7338 7.34813 55.7084 7.26269C54.085 7.0918 52.8034 7.60446 51.6926 8.80066V7.51902H48.1895V20.0791H51.6926V13.5V13.3291C51.6926 11.9621 51.8635 11.6203 52.1198 11.1931C52.5471 10.5095 53.316 10.0823 54.1705 10.1678C55.0249 10.1678 55.7939 10.595 56.2211 11.2785C56.5629 11.7912 56.5629 12.3893 56.5629 12.9874V19.9937H60.066V13.2437C60.066 11.9621 60.2369 11.5348 60.4933 11.1076C60.9205 10.4241 61.6895 10.0823 62.5439 10.0823C63.3983 10.0823 64.0819 10.5095 64.5091 11.1931C64.7654 11.6203 64.8508 12.1329 64.8508 12.4747C64.8508 12.6456 64.8508 12.8165 64.8508 12.9019V19.9083H68.354V12.2184C68.354 11.5348 68.2686 10.8513 68.0977 10.2532C67.7559 9.39876 67.2433 8.62978 66.4743 8.11712Z">
+                      </path>
+                      <path class="YooMoneyLogoPrimaryColor"
+                        d="M111.417 16.1494C110.904 16.662 109.708 17.6019 108.085 17.6873C106.718 17.7728 105.692 17.3456 104.923 16.5766C104.582 16.2348 104.325 15.7221 104.154 15.2095H113.809V15.124C113.895 14.6114 113.98 14.1842 113.98 13.6715C113.98 13.2443 113.895 12.6462 113.724 11.8772C113.297 10.4247 112.442 9.31392 111.332 8.45948C110.05 7.51961 108.854 7.26328 108.512 7.26328C106.034 6.83607 103.214 7.94682 101.762 10.2538C100.737 11.8772 100.822 13.5006 100.822 14.0133C100.822 14.6114 100.907 16.4911 102.445 18.2C104.24 20.1652 106.718 20.2506 107.487 20.3361C110.904 20.4215 113.211 18.2854 113.724 17.8582L111.417 16.1494ZM105.436 10.8519C105.949 10.5101 106.547 10.2538 107.316 10.2538C108.085 10.2538 108.683 10.5101 109.281 10.8519C109.794 11.2791 110.221 11.7918 110.477 12.3899H104.325C104.411 11.7918 104.838 11.1937 105.436 10.8519Z">
+                      </path>
+                    </svg></div>
+                </a></div>
+              <div>
+                <div class="styled__StyledNotifierAndUserWrapper-sc-b7vtrh-0 kqbEiN"><a
+                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-disableElevation MuiButtonBase-root MuiButton-containedActive styled__StyledAddMoneyMuiButton-sc-b7vtrh-3 eGBRlr qa-add-money-button lsp-ak8w8a"
+                    tabindex="0" href="https://yoomoney.ru/prepaid?from=layout-portal-header">Пополнить</a>
+                  <div class="qa-user">
+                    <div aria-label="Открыть боковое меню"
+                      class="PtIconPlus__StyledPtIconPlus-sc-1cgbb1n-0 fwVKXb User2__StyledUser2PtIconPlus-sc-5tvppr-1 NKSiC">
+                      <div class="PtIconPlus__StyledPtIconPlusBlock-sc-1cgbb1n-2 bxYOMM">
+                        <div
+                          class="User2Balance__StyledUser2Balance-sc-osahmw-0 cCjlwU qa-user-show-sidebar-balance ym-hide-content">
+                          <div class="Decorator__StyledDecorator-sc-12ji3ka-0 gcrsUe"><span
+                              class="Text__StyledTextSpan-sc-9bqqn7-0 jBNBBO"><span aria-label="0₽"><span
+                                  class="Text__StyledTextSpan-sc-9bqqn7-0 bQDMdt">0</span><span
+                                  class="Text__StyledTextSpan-sc-9bqqn7-0 dZyMnu"> <!-- -->₽</span></span></span></div>
+                        </div>
+                      </div>
+                      <div class="PtIconPlus__StyledPtIconPlusIcon-sc-1cgbb1n-1 hEHmFj qa-user-show-sidebar-avatar">
+                        <div class="UserPic__StyledUserPicWrapper-sc-dm1xf7-0 iygnXt">
+                          <div class="PtAvatar__StyledPtAvatar-sc-68rzod-1 ivRGCO">
+                            <div
+                              class="PtAvatar__StyledPtAvatarPhoto-sc-68rzod-0 VQpQf UserPic__StyledPtAvatarPhoto-sc-dm1xf7-2 cZHrAc">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="PtIconPlus__StyledPtIconPlusIcon-sc-1cgbb1n-1 kvsAil"><svg
+                          class="Icon2__StyledIcon2-sc-1u14edl-0 gpamP User2__StyledArrowIcon-sc-5tvppr-0 gZwXQp">
+                          <g class="Icon2__StyledG-sc-1u14edl-2">
+                            <path fill-rule="evenodd" d="M15 5.425L13.59 4 8 9.65 2.41 4 1 5.425 8 12.5l7-7.075z">
+                            </path>
+                          </g>
+                        </svg></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="styled__StyledHeaderMenuAndSearchWrapper-sc-b7vtrh-5 hvrNHO">
+                  <div class="styled__StyledMenuContainer-sc-b7vtrh-4 gsZOtz">
+                    <div
+                      class="Decorator__StyledDecorator-sc-12ji3ka-0 jUupUs qa-menu styled__StyledMenu-sc-b7vtrh-6 coJhWP"
+                      display="flex">
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-shops"
+                          href="https://yoomoney.ru/catalogue"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Оплата услуг</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-transfers"
+                          href="https://yoomoney.ru/transfer?from=layout-portal-menu"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Переводы</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-gamesAndServices"
+                          href="https://yoomoney.ru/digital-goods/games"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Игры и программы</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-bankCards"
+                          href="https://yoomoney.ru/cards"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">Карты</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 gvtrrG qa-discountsAndBonuses"
+                          href="https://yoomoney.ru/loyalty"><span class="styled__StyledText-sc-1pdlztl-3 BvwDh">Кэшбэк
+                            и акции</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 lalQcX"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 jzFdot qa-receiveMoney"
+                          href="https://yoomoney.ru/get"><span class="styled__StyledText-sc-1pdlztl-3 BvwDh">Сбор
+                            денег</span></a></div>
+                      <div class="styled__StyledItemWrapper-sc-1a5f4sx-1 kTPZRF"><a
+                          class="styled__StyledLink-sc-1pdlztl-1 hqhjjC qa-marketing"
+                          href="/yoovillage/promo?utm_source=money&amp;utm_campaign=yoovillage&amp;utm_medium=banner&amp;utm_content=portal_shapka"><span
+                            class="styled__StyledText-sc-1pdlztl-3 BvwDh">ЮVillage</span></a></div>
+                    </div>
+                  </div>
+                  <div class="styled__StyledSearchContainer-sc-b7vtrh-7 dSHqZM"><button
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium qa-search-button lsp-ssonp8"
+                      tabindex="0" type="button" aria-label="Поиск"><svg class="Icon2__StyledIcon2-sc-1u14edl-0 gAwMYr">
+                        <g class="Icon2__StyledG-sc-1u14edl-2">
+                          <path
+                            d="M16.315 14.901L22 20.586 20.586 22l-5.685-5.685a7.997 7.997 0 111.414-1.414zM10 16a6 6 0 100-12 6 6 0 000 12z">
+                          </path>
+                        </g>
+                      </svg></button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="root">
+    <div class="TplLayout__StyledTplLayout-sc-8uz38n-0 dlMtlX qa-fundraise-and-bill-container">
+      <div class="TplLayout__StyledTplLayoutContent-sc-8uz38n-2 eBmOdg">
+        <div class="TplLayout__StyledTplLayoutContainer-sc-8uz38n-1 dBheXi">
+          <div class="MuiBox-root mui-1dkpo8j">
+            <div class="Decorator__StyledDecorator-sc-12ji3ka-0 ctrqsP qa-fundraise-and-bill-informer-anonymous">
+              <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 SKbxQ">
+
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard qa-informer mui-1ypgsgp"
+                  role="alertdialog" type="informer">
+                  <div class="MuiAlert-icon mui-1un7gzb"><svg class="Icon2__StyledIcon2-sc-1u14edl-0 jwZqWg qa-icon">
+                      <g class="Icon2__StyledG-sc-1u14edl-2">
+                        <path
+                          d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1-4v-8h-2v8h2zm0-10V6h-2v2h2z">
+                        </path>
+                      </g>
+                    </svg></div>
+                  <div class="MuiAlert-message mui-1bt3fz9">
+                    <div class="mui-fhbsai">
+                      <div>
+                        <div
+                          class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root qa-title mui-1t45w3y">
+                          Подтвердите личность</div>
+                        <div class="qa-text mui-1g0q5ch"><span>Пока у вас анонимный кошелёк, вы не можете получать
+                            переводы — ни с карты, ни из кошелька.</span></div>
+                      </div>
+                      <div class="mui-11ghuvh">
+                        <a class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root qa-fundraise-and-bill-informer-how-confirm mui-1ie5yx"
+                          tabindex="0" href="https://yoomoney.ru/id/light">Как подтвердить личность</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qa-fundraise-and-bill-topup-link MuiBox-root mui-18ez95">
+              <div class="PtAvatar__StyledPtAvatar-sc-68rzod-1 ivRGCO">
+                <div class="PtAvatar__StyledPtAvatarPhoto-sc-68rzod-0 Nwnxg"></div>
+              </div>
+              <div class="MuiBox-root mui-1u762k"><span
+                  class="Text__StyledTextSpan-sc-9bqqn7-0 jYdfwj qa-fundraise-and-bill-topup-account">4100 1181 0797
+                  5129</span></div>
+              <div class="MuiBox-root mui-1jcfcth"><span
+                  class="Text__StyledTextSpan-sc-9bqqn7-0 cBZHuF qa-fundraise-and-bill-topup-link-description">Ссылка
+                  для быстрого пополнения</span>
+                <div class="mui-16knauk e1u4eiad0">
+                  <svg tabindex="0" aria-expanded="false" aria-label="Подробнее"
+                    class="Icon2__StyledIcon2-sc-1u14edl-0 hVCQjE qa-popup-icon mui-e7semd e1u4eiad1">
+                    <g class="Icon2__StyledG-sc-1u14edl-2">
+                      <path fill-rule="evenodd"
+                        d="M8 15A7 7 0 118 1a7 7 0 010 14zm-1-2h2v-2H7v2zM8 3C5.79 3 4.5 4.281 4.5 6h2c0-.856.4-1.444 1.5-1.444s1.5.7 1.5 1.555C9.5 7.667 7 7.472 7 10h2c0-1.75 2.5-1.944 2.5-3.889C11.5 4.392 10.21 3 8 3z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="MuiBox-root mui-t4yxvl">
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root qa-fundraise-and-bill-topup-href mui-1ksrkyn">
+                  <div
+                    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl mui-1lt1bsp">
+                    <input type="text" aria-invalid="false" disabled="" readonly="" rows="4"
+                      value="https://yoomoney.ru/to/4100118107975129"
+                      class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled mui-jslztw" />
+                    <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline mui-17493ea">
+                      <legend class="mui-hdw1oc"><span class="notranslate">​</span></legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Decorator__StyledDecorator-sc-12ji3ka-0 kcmPHu qa-fundraise-and-bill-tabs-toggler">
+              <div role="group" class="MuiToggleButtonGroup-root MuiToggleButtonGroup-fullWidth mui-bjx0xa">
+                <button
+                  class="MuiButtonBase-root MuiToggleButton-root Mui-selected MuiToggleButton-fullWidth MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal qa-fundraise-and-bill-tabs-toggler-tab-fundraise mui-1gubm7i"
+                  tabindex="0" type="button" value="fundraise" aria-pressed="true">Коллективный сбор</button><button
+                  class="MuiButtonBase-root MuiToggleButton-root MuiToggleButton-fullWidth MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal qa-fundraise-and-bill-tabs-toggler-tab-bill mui-1gubm7i"
+                  tabindex="0" type="button" value="bill" aria-pressed="false">Личный запрос</button>
+              </div>
+            </div>
+            <div class="Decorator__StyledDecorator-sc-12ji3ka-0 jnYqbJ">
+              <div class="mui-1lf6wyk ets56961">
+                <div class="qa-empty-fundraise"><span display="block"
+                    class="Text__StyledTextSpan-sc-9bqqn7-0 jxFzsL">Подойдёт, если нужно собрать на корм для бездомной
+                    собаки, проект или другое хорошее дело.</span>
+                  <div class="Decorator__StyledDecorator-sc-12ji3ka-0 cjxAb"><span display="block"
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 jxFzsL">Готовый сбор можно вставить на свой сайт. Если
+                      сайта нет, скопировать ссылку — и поделиться с кем и где угодно.</span></div>
+                  <div class="Decorator__StyledDecorator-sc-12ji3ka-0 cjxAb">
+                    <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone MuiTypography-colorLink qa-empty-fundraise-link mui-57df3k"
+                      target="_blank" href="https://yoomoney.ru/page?id=536316">Все подробности</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Decorator__StyledDecorator-sc-12ji3ka-0 jnYqbJ">
+              <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iKAqlQ">
+                <a class="MuiButton-root MuiButton-contained MuiButton-containedActive MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root Mui-disabled qa-fundraise-create-btn mui-xmdsnv"
+                  tabindex="-1" aria-disabled="true" href="/get/fundraise/create">Создать сбор</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="footer">
+      <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 hnUsMC">
+        <div class="HelpCenterMenu__StyledHelpCenterWrapper-sc-jknjuw-2 jeozFd qa-help-center-menu">
+          <div class="HelpCenterMenu__StyledHelpCenter-sc-jknjuw-0 iURsis qa-menu">
+            <div class="Icon__StyledIconWrapper-sc-1qmg3zv-1 iejWLH qa-threads"><svg width="24" height="24"
+                class="Icon__StyledIcon2-sc-1qmg3zv-0 gOLCeN">
+                <path
+                  d="M22 7.5c0-2-1.6-3.5-3.5-3.5h-13C3.6 4 2 5.6 2 7.5v6C2 15.4 3.6 17 5.5 17H7v2c0 1.4 1.1 2.5 2.5 2.5.7 0 1.3-.3 1.8-.7L15 17h3.5c1.9 0 3.5-1.6 3.5-3.5v-6zm-2 2.9v3.1c0 .8-.7 1.5-1.5 1.5h-4.3l-4.3 4.3c-.1.1-.2.1-.4.1-.3.1-.5-.1-.5-.4v-4H5.5c-.8 0-1.5-.7-1.5-1.5v-6C4 6.7 4.7 6 5.5 6h13c.8 0 1.5.7 1.5 1.5v2.9z">
+                </path>
+              </svg></div>
+            <div class="Icon__StyledIconWrapper-sc-1qmg3zv-1 jBTqui qa-faq"><svg width="24" height="24"
+                class="Icon__StyledIcon2-sc-1qmg3zv-0 gOLCeN">
+                <path
+                  d="M9.44847 7.56623C9.59751 7.11909 10.3318 6 11.9998 6c1.0275 0 1.6905.45036 2.1222.9957.4671.59006.6278 1.25005.6278 1.5043 0 .41865-.0529.82866-.2263 1.21886-.1686.37924-.4765.79784-1.0784 1.19904-.1988.1326-.3941.2413-.5953.3491l-.0924.0492c-.1666.0886-.3603.1916-.5274.2975-.2048.1299-.459.3171-.6575.5972-.2156.3043-.3227.6563-.3227 1.0391v3.5h2v-3.4132c.0138-.0096.0306-.0209.051-.0339.097-.0614.2087-.121.3741-.2092l.1195-.0638c.2167-.1162.4797-.261.7601-.4478.8981-.5988 1.4651-1.3052 1.7966-2.051.3266-.73476.3987-1.44975.3987-2.0311 0-.74575-.3393-1.83576-1.0597-2.7457C14.9343 4.79964 13.7223 4 11.9998 4 9.26773 4 7.90205 5.88091 7.5511 6.93377c-.17465.52395.10851 1.09027.63246 1.26491.52394.17465 1.09026-.10851 1.26491-.63245zM12.2498 20.5c.6903 0 1.25-.5596 1.25-1.25s-.5597-1.25-1.25-1.25c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25z">
+                </path>
+              </svg></div>
+          </div>
+        </div>
+        <div class="ThemeLocal__StyledThemeLocal-sc-1y2ad8h-0 kGUHwV"></div>
+        <footer class="styled__StyledFooter-sc-7k9c93-0 gHcFaM qa-footer-light">
+          <div class="styled__StyledFooterWrap-sc-7k9c93-1 hGUahx">
+            <div class="styled__StyledContentWrapper-sc-7k9c93-2 iCwNXb">
+              <div class="styled__StyledCopyrightWrapper-sc-7k9c93-3 kGGMLD">
+                <div class="styled__StyledCopyright-sc-191fnhu-0 joobOH qa-copyright">© 2023 ООО НКО «<a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone MuiTypography-colorLink lsp-k50klf"
+                    href="https://yoomoney.ru/about"><span
+                      class="Text__StyledTextSpan-sc-9bqqn7-0 gMXBWK">ЮМани</span></a>». Лицензия Банка России № 3510‑К
+                </div>
+              </div>
+              <div aria-label="Переключить язык"
+                class="styled__StyledLangSwitcherWrapper-sc-kvs82x-0 fccTYv qa-lang-switcher">
+                <div class="LangSwitcher__StyledLangSwitcher-sc-66t8h4-1 hAYUFB">
+                  <div class="LangSwitcher__StyledLangWrapper-sc-66t8h4-2 euzNJE qa-lang-switcher-selected-lang">
+                    <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 bTTkpw qa-lang-switcher-flag"
+                      data-qa-flag-name="ru"></div>
+                    <div class="LangSwitcher__StyledName-sc-66t8h4-0 hBfXWF">Ru</div>
+                  </div>
+                  <div class="LangSwitcher__StyledDropdown-sc-66t8h4-3 pwPMV">
+                    <ul class="MuiList-root MuiList-padding LangSwitcher__StyledMenu-sc-66t8h4-4 hhzvzO lsp-1kvk99m"
+                      role="menu" tabindex="-1"><a class="MuiMenuItem-root MuiButtonBase-root lsp-1at315b" tabindex="0"
+                        role="menuitem"
+                        href="https://yoomoney.ru/yooid/profile/set-lang?language=ru&amp;returnUrl="><span selected=""
+                          class="LangSwitcherLang__StyledLangWrapper-sc-15k6gji-0 ffGBRO qa-lang-switcher-lang"
+                          data-qa-lang-name="Ru">
+                          <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 bTTkpw qa-lang-switcher-flag"
+                            data-qa-flag-name="ru"></div><span
+                            class="LangSwitcherLang__StyledName-sc-15k6gji-1 gWmYtL">Ru</span>
+                        </span></a><a class="MuiMenuItem-root MuiButtonBase-root lsp-1at315b" tabindex="-1"
+                        role="menuitem"
+                        href="https://yoomoney.ru/yooid/profile/set-lang?language=en&amp;returnUrl="><span
+                          class="LangSwitcherLang__StyledLangWrapper-sc-15k6gji-0 knWQWq qa-lang-switcher-lang"
+                          data-qa-lang-name="En">
+                          <div size="16" class="LangSwitcherFlag__StyledIcon-sc-5a2qos-0 kEYwDV qa-lang-switcher-flag"
+                            data-qa-flag-name="gb"></div><span
+                            class="LangSwitcherLang__StyledName-sc-15k6gji-1 gWmYtL">En</span>
+                        </span></a></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Decorator__StyledDecorator-sc-12ji3ka-0 iKAqlQ">
+              <div class="Decorator__StyledDecorator-sc-12ji3ka-0 hWNLVm"><span display="inline-block"
+                  class="Text__StyledTextSpan-sc-9bqqn7-0 eWuLyS">ЮMoney в вашем смартфоне</span></div><a
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  lsp-1sdubjt"
+                tabindex="0"
+                href="https://promo.yoomoney.ru/app?utm_source=money&amp;utm_medium=referral&amp;utm_campaign=app&amp;utm_term=badge&amp;utm_content=footer">Подробнее</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script
+    nonce="HmJqxF4wr+BW8kf4iACLoQ==">!function () { if (typeof Symbol === 'function') return; var p = document.getElementsByTagName('script')[0]; var s = document.createElement('script'); s.src = 'https://static.yoomoney.ru/files-front/libs/core-js-symbol/3.21.1/core-js-symbol.js)'; p.parentNode.insertBefore(s, p); }();</script>
+  <script nonce="HmJqxF4wr+BW8kf4iACLoQ==" crossorigin="anonymous"
+    src="https://static.yoomoney.ru/files-front/libs/react/17.0.2/react-with-dom.min.js"></script>
+  <script
+    nonce="HmJqxF4wr+BW8kf4iACLoQ==">window.__data__ = { "preloadedState": { "language": "ru", "counters": { "yametricsTransferId": 46740843, "yametrics": { "enabled": true, "id": [46740843, 152220] }, "mailruMetrics": "3231983", "widgetButton": "11859880" }, "user": { "userType": "anonymous", "account": "4100118107975129", "avatarId": null, "avatarSource": null, "name": null, "uid": "2368008745199517" }, "platform": { "isBrowser": true, "isMobile": false, "isTablet": false, "BrowserName": "Chrome", "BrowserVersion": "110.0.0.0", "BrowserEngine": "Blink", "BrowserEngineVersion": "110.0.0.0", "OSFamily": "MacOS", "OSVersion": "10.15.7", "SameSiteSupport": true, "SameSiteNoneSupport": true, "isRobot": false }, "currentTab": "fundraise", "fundraise": { "invoicesHistory": { "invoices": [] }, "invoicePayments": { "payments": [] } }, "fundraiseInvoicesHistory": { "isUninitialized": false, "isFetching": false, "isError": false, "successCount": 1, "failureCount": 0, "errors": {} }, "fundraiseCreateInvoice": { "isUninitialized": true, "isFetching": false, "isError": false, "successCount": 0, "failureCount": 0, "errors": {} }, "fundraiseUpdateInvoice": { "isUninitialized": true, "isFetching": false, "isError": false, "successCount": 0, "failureCount": 0, "errors": {} }, "fundraiseDeleteInvoice": { "isUninitialized": true, "isFetching": false, "isError": false, "successCount": 0, "failureCount": 0, "errors": {} }, "fundraiseInvoicePayments": { "isUninitialized": true, "isFetching": false, "isError": false, "successCount": 0, "failureCount": 0, "errors": {} } } }; window.__urls__ = { "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "default": "https:\u002F\u002Fyoomoney.ru", "money": "https:\u002F\u002Fyoomoney.ru", "scrat": "https:\u002F\u002Fpaymentcard.yoomoney.ru", "threeDsGate": "https:\u002F\u002F3ds-gate.yoomoney.ru", "paymentApi": "https:\u002F\u002Fpayment.yoomoney.ru\u002Fapi\u002Ftransfers\u002F", "soberu": "https:\u002F\u002Fsobe.ru", "static": "https:\u002F\u002Fstatic.yoomoney.ru", "promo": "https:\u002F\u002Fpromo.yoomoney.ru", "avatar": "https:\u002F\u002Fyoomoney.ru" }; window.__layoutData__ = { "appUrls": { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "avatar": "https:\u002F\u002Fyoomoney.ru", "default": "https:\u002F\u002Fyoomoney.ru", "static": "https:\u002F\u002Fstatic.yoomoney.ru" }, "counters": { "yametrics": [152220, 62147710, 47149527, 45374142], "gtag": "DC-10075061", "vkPixel": "VK-RTRG-1032781-eXdJD", "vkPixelSmm": "VK-RTRG-1192084-6ykob", "mail": "3226222" }, "threads": { "connectionSettings": { "history": { "url": "https:\u002F\u002Fccomni-ds.yoomoney.ru\u002Fhistory\u002Fv5", "count": 20 }, "uid": "bb2a4811a689953be806fa2026ffe592", "apiUrl": "https:\u002F\u002Fccomni-ds.yoomoney.ru", "datastore": "https:\u002F\u002Fccomni-ds.yoomoney.ru\u002Ffiles", "websocket": "wss:\u002F\u002Fccomni-gate.yoomoney.ru\u002Fsocket" } }, "publicUrlPath": "https:\u002F\u002Fstatic.yoomoney.ru\u002Flayout-service-portal\u002F", "balance": { "rub": { "availableAmount": 0, "currencyCode": 643, "isSumVisible": true } }, "phoneNumber": "+7 495 197-86-86", "language": { "currentLanguage": "ru" }, "secretKey": "u85f6399683406522fafc34597e0594a6", "sk": "bbf0bc6924a321e28f33f1f2405f3f022037ef4a:1676433475771", "promo": { "img": "\u002Fi\u002FYooKassa_logo_60x60.svg", "text": "Онлайн-платежи для бизнеса. &#10;ЮKassa", "href": "https:\u002F\u002Fyookassa.ru\u002F?_openstat=template;ifooter;get;kassa", "alt": "YooKassa" }, "user": { "uid": "2368008745199517", "accountId": "4100118107975129", "userName": null, "avatarId": null, "avatarSource": null, "accountStatus": "anonymous", "isGdprAccepted": true, "hasMobileApp": false, "authHost": "https:\u002F\u002Fyoomoney.ru\u002Fyooid\u002F", "accountSynonym": "ehnu4zaDRP9ptqJttStpFVBaXB5mKx8xwPf2mDflFCs=", "maskedEmail": "jnas***in@gmail.com", "maskedPhone": "99670*****74", "isEmailLinked": true }, "menu": [{ "name": "shops", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "transfers", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "gamesAndServices", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "bankCards", "active": false, "curtain": { "links": [[{ "href": "\u002Fcards\u002Fplastic", "text": "Пластиковая", "metric": "HEADMENU_CLICK_CARDS_PLASTIC" }, { "href": "\u002Fcards\u002Fonlinevirtual", "text": "Виртуальная для онлайн-шопинга", "metric": "HEADMENU_CLICK_CARDS_VIRT_ONL" }, { "href": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fhce-card", "text": "Бесконтактная", "metric": "HEADMENU_CLICK_CARDS_NONCONTACT" }, { "href": "\u002Fcards\u002Fvirtual", "text": "Виртуальная «Мир»", "metric": "HEADMENU_CLICK_CARDS_VIRT" }, { "href": "\u002Faccount\u002Fmulticurrency-promo", "text": "Мультивалютная", "metric": "HEADMENU_CLICK_CARDS_MULTICURRENCY" }, { "href": "\u002Fcards\u002Fpromo", "text": "Все карты ЮMoney", "metric": "HEADMENU_CLICK_CARDS_ALL_CARDS" }], [{ "href": "\u002Fcards\u002Factivation", "text": "Активировать новую", "iconName": "add-circle", "metric": "HEADMENU_CLICK_CARDS_NEW" }]], "urls": { "bankCards": "\u002Fcards", "metric": "HEADMENU_CLICK_CARDS_MYCARDS" } }, "isBeta": false, "isIndicatorActive": false, "userTags": [] }, { "name": "discountsAndBonuses", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "receiveMoney", "active": true, "curtain": null, "isBeta": false, "isIndicatorActive": false }, { "name": "marketing", "text": "ЮVillage", "colorText": "#EE0000", "url": "\u002Fyoovillage\u002Fpromo?utm_source=money&utm_campaign=yoovillage&utm_medium=banner&utm_content=portal_shapka", "active": false, "curtain": null, "isBeta": false, "isIndicatorActive": false }], "experiments": {}, "smartBanner": { "smartBannerPaths": ["\u002Fstart", "\u002Faccount", "\u002Faccount\u002Fmulticurrency-promo\u002F", "\u002Fannually-confirmation\u002Fsuccess", "\u002Fcard\u002Fcard-payment\u002Factivation-data-error.xml", "\u002Fcard\u002Fcard-payment\u002Fcancel-check.xml", "\u002Fcards", "\u002Fcards\u002F", "\u002Fcards\u002Fissue\u002Fsuccess", "\u002Fglobalmno?", "\u002Fkeyterms", "\u002Flegal", "\u002Floyalty", "\u002Fpage?id=525698", "\u002Fpage?id=527708", "\u002Fpage?id=529499", "\u002Fpage?id=529934", "\u002Fpage?id=532005", "\u002Fpage?id=532450", "\u002Fpay\u002Fpage?id=522764", "\u002Fpay\u002Fpage?id=531940", "\u002Fpayments\u002Fcheckout\u002Fsuccess", "\u002Fpayments\u002Fexternal\u002Fsuccess", "\u002Fpfm\u002Fanalytics", "\u002Fsettings", "\u002Fsettings\u002F", "\u002Funsupported-browser?", "\u002Fcards\u002Fyacard", "\u002Fcards\u002Fvirtual", "\u002Fdigital-goods", "\u002Fdigital-goods\u002Fgames", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002F*", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002F157297", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002F157293", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002F526303", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igri-ot-electronis-arts\u002F528924", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fonlaien-igri\u002F525001", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fportali-i-servisi\u002F525171", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-konsoli\u002F528543", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igri-activision-blizzard\u002F531836", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fdrugie-populyarnie-tovari\u002F529843", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fkino-i-cifrovoe-tv\u002F529838", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-action-i-shuteri\u002F525002", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-drugoe\u002F528110", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fmuzika\u002F529839", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-antivirusi-i-zashita\u002F526304", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002Fknigi-aksessuari-podarki\u002F529841", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-priklyucheniya\u002F525006", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-strategii\u002F525005", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-rolevie-igri\u002F525003", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-simulyatori\u002F525008", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-kazualnie\u002F525000", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-ofisnie-programmi\u002F526308", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-sportivnie-\u002F525007", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002Fkatalog-programm-graficheskie-redaktori\u002F528087", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-gonki\u002F525004", "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Figri\u002Fjanri-igrovie-artefakti\u002F525265", "\u002Ftransfers\u002Fsuccess", "\u002Ftopup\u002Fmobile\u002Fsuccess", "\u002Fcashback-game", "\u002Fcards\u002Finfo\u002F"], "smartBannerEnabled": true }, "promoPopup": { "marketingSubscriptionPopupEnabled": true, "marketingSubscriptionPopupPaths": [{ "url": "\u002Fmain", "blockId": "marketing_subscription_popup" }], "desktop": { "promoPopupPaths": ["\u002Factions", "\u002Fcatalogue", "\u002Fcatalogue\u002F*", "\u002Fmain", "\u002Fpromo"], "promoPopupEnabled": true }, "mobile": { "promoPopupPaths": ["\u002Factions", "\u002Fcatalogue", "\u002Fcatalogue\u002F*", "\u002Fmain", "\u002Fpromo\u002F*", { "url": "\u002Ftransfer\u002Fprocess\u002Fsuccess", "blockId": "marketing_mobile_transfers_popup" }, { "url": "\u002Fpayments\u002Finternal\u002Fsuccess", "blockId": "marketing_mobile_payments_popup" }], "promoPopupEnabled": true }, "surveyPopupEnabled": true, "surveyPopupPaths": [{ "url": "\u002Fmain", "blockId": "surveys" }, { "url": "\u002Fcatalogue", "blockId": "surveys" }, { "url": "\u002Ftransfer", "blockId": "surveys" }, { "url": "\u002Fdigital-goods", "blockId": "surveys" }, { "url": "\u002Fget", "blockId": "surveys" }, { "url": "\u002Floyalty", "blockId": "surveys" }] }, "marketingPixelsAllowedUrls": { "gtag": ["\u002F", "\u002Fmain", "\u002Fcatalogue", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Fdigital-goods\u002Fgames", "\u002Fid", "\u002Fquickpay\u002F*", "\u002Fcardlink\u002Fsuccess"], "mail": ["\u002F", "\u002Fcatalogue", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Fdigital-goods\u002Fgames", "\u002Fid", "\u002Fquickpay\u002F", "\u002Fcardlink\u002Fsuccess", "\u002Fpayments\u002Finternal\u002Fsuccess", "\u002Ftransfer\u002Fprocess\u002Fland3ds", "\u002Ftransfer\u002Fprocess\u002Fsuccess"], "vkSmm": ["\u002F", "\u002Fmain", "\u002Fdigital-goods", "\u002Floyalty", "\u002Fspending-points", "\u002Fpromo", "\u002Fcards", "\u002Fcards\u002Fpromo", "\u002Ftransfer", "\u002Fcatalogue", "\u002Ftransfer"] }, "siteMap": { "default": [{ "title": "Оплата услуг", "link": "\u002Fcatalogue?click_footer=oplata_uslug", "content": [{ "text": "Мобильная связь", "link": "\u002Fcatalogue\u002Fphone?click_footer=mobilnaya_svyaz" }, { "text": "Интернет", "link": "\u002Fcatalogue\u002Finternet?click_footer=internet" }, { "text": "ЖКХ", "link": "\u002Fcatalogue\u002Fzku?click_footer=zhkkh" }, { "text": "Штрафы ГИБДД", "link": "\u002Fdebts?click_footer=shtrafy_gibdd" }, { "text": "Кредиты", "link": "\u002Fcatalogue\u002Ffin?click_footer=kredity" }] }, { "title": "Игры и программы", "link": "\u002Fdigital-goods?click_footer=igry_i_programmy", "content": [{ "text": "Игры", "link": "\u002Fdigital-goods\u002Fgames?click_footer=igry" }, { "text": "Программы", "link": "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fprogrammi\u002F526303?click_footer=programmy" }, { "text": "Подарочные карты", "link": "\u002Fdigital-goods\u002Fcategory\u002Fcifromarket\u002Fpodarochnie-karti\u002F157293?click_footer=podarochnye_karty" }] }, { "title": "Кэшбэк и акции", "link": "\u002Floyalty?click_footer=keshbek_i_akcii", "content": [{ "text": "Мгновенный кэшбэк", "link": "\u002Floyalty?click_footer=mgnovennyj_keshbek" }, { "text": "Скидки от партнёров", "link": "\u002Fpromo?click_footer=skidki_ot_partnyorov" }] }, { "title": "Карты", "link": "\u002Fcards?click_footer=karty", "content": [{ "text": "Пластиковая", "link": "\u002Fcards\u002Fplastic?click_footer=plastikovaya" }, { "text": "Виртуальная для онлайн-шопинга", "link": "\u002Fcards\u002Fonlinevirtual?click_footer=virtualnaya_dlya_onlajn_shopinga" }, { "text": "Бесконтактная", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fhce-card?click_footer=beskontaktnaya" }, { "text": "Виртуальная «Мир»", "link": "\u002Fcards\u002Fvirtual?click_footer=virtualnaya_«mir»" }, { "text": "Мультивалютная", "link": "\u002Faccount\u002Fmulticurrency-promo?click_footer=multivalyutnaya" }, { "text": "Все карты ЮMoney", "link": "\u002Fcards\u002Fpromo?click_footer=vse_karty_yumoney" }] }, { "title": "Переводы", "link": "\u002Ftransfer?click_footer=perevody", "content": [{ "text": "В другой кошелёк", "link": "\u002Ftransfer\u002Fa2w?click_footer=v_drugoj_koshelyok" }, { "text": "На карту", "link": "\u002Ftransfer\u002Fa2c?click_footer=na_kartu" }, { "text": "На банковский счёт", "link": "\u002Fwithdraw\u002Fbank-account?click_footer=na_bankovskij_schyot" }, { "text": "Сбор денег", "link": "\u002Fget?click_footer=sbor_deneg" }, { "text": "API Сбора денег", "link": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg" }] }, { "title": "Ещё", "content": [{ "text": "Самозанятые", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Fpromo-self-employed?click_footer=samozanyatye", "forAuthLink": "\u002Fself-employed?from-portal-shell=true" }, { "text": "Инвестиции", "link": "https:\u002F\u002Fpromo.yoomoney.ru\u002Finvest?click_footer=investicii" }, { "text": "Безопасность в интернете", "link": "\u002Fsecurity?click_footer=bezopasnost_v_internete" }, { "text": "Защита покупателя", "link": "\u002Fpage?id=536344&click_footer=zashchita_pokupatelya" }, { "text": "Юридическая информация", "link": "\u002Flegal?click_footer=yuridicheskaya_informaciya" }, { "text": "Пресс-центр", "link": "\u002Fpage?id=524406&click_footer=press_centr" }, { "text": "ЮStream", "link": "https:\u002F\u002Fdonate.stream\u002Fyoostream?click_footer=yustream" }, { "text": "Карта сайта", "link": "\u002Fsite-map?click_footer=karta_sajta" }] }] }, "deviceInfo": { "mobileAppBadges": ["app-store", "google-play"] }, "smartBannerOffers": [], "staticParams": { "layoutPortalWithLightFooter": true, "layoutPortalWithoutCreateAccount": true } }; window.__language__ = undefined; window.__secretKey__ = "ae7d6e62853ecf912618701abadcd815c3bc664f:1676433475650";</script>
+  <div>
+    <script nonce="HmJqxF4wr+BW8kf4iACLoQ=="
+      src="https://static.yoomoney.ru/layout-service-portal/portal.ru.b572440d5ee0bfc94e75c9bdd2eb21f1.js"
+      crossorigin="anonymous"></script>
+    <script nonce="HmJqxF4wr+BW8kf4iACLoQ=="
+      src="https://static.yoomoney.ru/layout-service-portal/portal.879e4e205e4d0161737d.js"
+      crossorigin="anonymous"></script>
+  </div>
+  <script crossorigin="anonymous"
+    src="https://static.yoomoney.ru/transfers-client/invoices.ru.b87a14cae416bad7f137974f346f0144.js"
+    nonce="HmJqxF4wr+BW8kf4iACLoQ=="></script>
+  <script crossorigin="anonymous" src="https://static.yoomoney.ru/transfers-client/invoices.ba9134d1a5e2f236085e.js"
+    nonce="HmJqxF4wr+BW8kf4iACLoQ=="></script>
+  <link rel="stylesheet" href="./css/grandbazar.css">
+</body>
+
+</html>

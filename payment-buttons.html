@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+  <title>API ЮMoney для сбора денег</title>
+  <link rel="stylesheet"
+    href="https://static.yoomoney.ru/checkout-docs-portal/documents-page.16f6811c3b9221b2a5a0.css" />
+
+</head>
+
+<body>
+  <div id="root">
+    <div>
+      <div class="templatecomponent__StyledPageContainer-sc-1urvbur-0 zTqvz">
+        <div class="templatecomponent__StyledMenuShadow-sc-1urvbur-5 cohixY"></div>
+        <div class="templatecomponent__StyledMenuContainer-sc-1urvbur-1 hxlwIk">
+          <div class="templatecomponent__StyledMenuContentContainer-sc-1urvbur-4 lkFPXh">
+            <div class="menucomponent__StyledMenuContainer-sc-j0lqre-0 frhoyj">
+              <div
+                class="menucomponent__StyledBaseMenuElementContainer-sc-j0lqre-1 menucomponent__StyledMenuHeader-sc-j0lqre-2 nQaxt biDbLP">
+                <a href="https://yookassa.ru/"
+                  class="header-logocomponent__StyledHeaderLogoContainer-sc-1ocf8w-0 eDDbHW">
+                  <div width="124" class="header-logocomponent__StyledIconContainer-sc-1ocf8w-1 ejupOr"><svg width="124"
+                      height="26" viewBox="0 0 124 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M120.374 7.15829L117.494 14.2342C117.412 14.3165 117.412 14.4811 117.412 14.5634L117.329 14.7279L117.247 14.5634C117.247 14.4811 117.165 14.3165 117.165 14.2342L114.285 7.15829H110.583L115.437 19.2532L113.38 23.8608H117.083L123.912 7.15829H120.374Z"
+                        fill="black"></path>
+                      <path
+                        d="M93.0568 7.8165C92.3985 7.32283 91.5758 6.99372 90.5884 6.91144C88.9429 6.74688 87.3796 7.32283 86.3099 8.39245V7.076H82.9365V19.1709H86.3099V12.8355C86.3099 11.4368 86.5568 11.0254 86.8036 10.6962C87.215 10.038 87.9555 9.70891 88.8606 9.70891C89.7656 9.70891 90.5884 10.1203 90.9998 10.7785C91.2467 11.2722 91.3289 11.9304 91.3289 12.2595C91.3289 13.3292 91.3289 19.1709 91.3289 19.1709H94.7023V11.8481C94.7023 9.95574 94.2087 8.63929 93.0568 7.8165Z"
+                        fill="black"></path>
+                      <path
+                        d="M76.6014 7.24058C74.9558 6.66463 73.1457 6.7469 71.5001 7.48741C70.4305 7.98108 69.4432 8.80387 68.8672 9.87349C68.2913 10.7785 68.0444 11.9304 68.0444 13.1646C68.0444 14.3988 68.2913 15.5507 68.8672 16.4558C69.4432 17.3608 70.1837 18.1836 71.171 18.6773C72.1584 19.171 73.3103 19.5001 74.3799 19.5001C74.9558 19.5001 75.5318 19.4178 76.1077 19.2532C76.6014 19.0887 77.0951 18.9241 77.5887 18.6773C78.5761 18.1013 79.3989 17.3608 79.8925 16.4558C80.4685 15.5507 80.7153 14.3988 80.7153 13.1646C80.7153 10.4494 79.152 8.14564 76.6014 7.24058ZM77.5065 13.3292C77.4242 14.3988 77.0951 15.3039 76.4368 15.8798C75.9432 16.2912 75.2027 16.538 74.2976 16.6203C73.3925 16.6203 72.7343 16.3735 72.1584 15.8798C71.5001 15.3039 71.171 14.3988 71.0887 13.3292C71.0065 12.095 71.5001 11.1077 72.4052 10.4494C72.8989 10.1203 73.5571 9.87349 74.2153 9.87349C74.9558 9.87349 75.5318 10.1203 76.1077 10.4494C77.0951 11.0254 77.5887 12.095 77.5065 13.3292Z"
+                        fill="black"></path>
+                      <path
+                        d="M64.0949 7.81647C63.4367 7.3228 62.6139 6.99369 61.6265 6.91141C61.462 6.91141 61.2152 6.91141 61.0506 6.91141C59.7341 6.91141 58.5822 7.48736 57.5949 8.63925L57.4303 8.88609H57.1012C56.8544 8.4747 56.5253 8.14558 56.1962 7.89875C55.5379 7.40508 54.7152 7.07596 53.7278 6.99368C52.1645 6.82913 50.9303 7.3228 49.8607 8.4747V7.24052H46.4873V19.3355H49.8607V13V12.8355C49.8607 11.519 50.0253 11.1899 50.2721 10.7785C50.6835 10.1203 51.424 9.70888 52.2468 9.79115C53.0696 9.79115 53.8101 10.2025 54.2215 10.8608C54.5506 11.3544 54.5506 11.9304 54.5506 12.5063V19.2532H57.924V12.7532C57.924 11.519 58.0886 11.1076 58.3354 10.6962C58.7468 10.038 59.4873 9.70888 60.3101 9.70888C61.1329 9.70888 61.7911 10.1203 62.2025 10.7785C62.4493 11.1899 62.5316 11.6836 62.5316 12.0127C62.5316 12.1772 62.5316 12.3418 62.5316 12.4241V19.1709H65.905V11.7658C65.905 11.1076 65.8228 10.4494 65.6582 9.87343C65.3291 9.05065 64.8354 8.31014 64.0949 7.81647Z"
+                        fill="black"></path>
+                      <path
+                        d="M107.373 15.5507C106.879 16.0443 105.727 16.9494 104.164 17.0317C102.848 17.114 101.86 16.7026 101.12 15.9621C100.791 15.633 100.544 15.1393 100.379 14.6456H109.677V14.5633C109.759 14.0697 109.841 13.6583 109.841 13.1646C109.841 12.7532 109.759 12.1773 109.594 11.4368C109.183 10.038 108.36 8.9684 107.291 8.14561C106.056 7.24055 104.905 6.99371 104.575 6.99371C102.189 6.58232 99.4742 7.65194 98.0754 9.87346C97.0881 11.4368 97.1704 13 97.1704 13.4937C97.1704 14.0697 97.2527 15.8798 98.7337 17.5254C100.462 19.4178 102.848 19.5 103.588 19.5823C106.879 19.6646 109.101 17.6076 109.594 17.1962L107.373 15.5507ZM101.613 10.4494C102.107 10.1203 102.683 9.87346 103.424 9.87346C104.164 9.87346 104.74 10.1203 105.316 10.4494C105.81 10.8608 106.221 11.3545 106.468 11.9304H100.544C100.708 11.3545 101.037 10.7785 101.613 10.4494Z"
+                        fill="black"></path>
+                      <path
+                        d="M23.6143 0C16.3738 0 10.6143 5.84177 10.6143 13C10.6143 20.2405 16.456 26 23.6143 26C30.7725 26 36.6143 20.1582 36.6143 13C36.6143 5.84177 30.7725 0 23.6143 0ZM23.6143 17.7721C20.9813 17.7721 18.7598 15.5506 18.7598 12.9177C18.7598 10.2848 20.9813 8.06329 23.6143 8.06329C26.2472 8.06329 28.4687 10.2848 28.4687 12.9177C28.3864 15.6329 26.2472 17.7721 23.6143 17.7721Z"
+                        fill="#8B3FFD"></path>
+                      <path d="M10.5316 3.70255V22.6266H5.92405L0 3.70255H10.5316Z" fill="#8B3FFD"></path>
+                    </svg></div>
+                </a>
+              </div>
+              <div class="menucomponent__StyledMenuContentContainer-sc-j0lqre-4 vTcKn">
+                <div class="MenuItem">
+                  <div class="MenuItem__StyledBaseMenuItemContentContainer-sc-xzl6h9-3 kCzhJq">
+                    <div>Главная</div>
+                  </div>
+                </div>
+                <div class="MenuItem">
+                  <div class="MenuItem__StyledH1MenuItemContentContainer-sc-xzl6h9-4 gqfOHY">
+                    <div>Основы работы с API</div>
+                  </div>
+                  <div>
+                    <div class="MenuItem">
+                      <div class="MenuItem__StyledBaseMenuItemContentContainer-sc-xzl6h9-3 fbTNUa"><a
+                          href="https://yoomoney.ru/docs/payment-buttons/using-api/flow"
+                          class="MenuItem__StyledMenuItemContent-sc-xzl6h9-1 kQAiyr">Сценарий</a></div>
+                    </div>
+                    <div class="MenuItem">
+                      <div class="MenuItem__StyledBaseMenuItemContentContainer-sc-xzl6h9-3 fbTNUa"><a
+                          href="https://yoomoney.ru/docs/payment-buttons/using-api/forms"
+                          class="MenuItem__StyledMenuItemContent-sc-xzl6h9-1 kQAiyr">Формы</a></div>
+                    </div>
+                    <div class="MenuItem">
+                      <div class="MenuItem__StyledBaseMenuItemContentContainer-sc-xzl6h9-3 fbTNUa"><a
+                          href="https://yoomoney.ru/docs/payment-buttons/using-api/notifications"
+                          class="MenuItem__StyledMenuItemContent-sc-xzl6h9-1 kQAiyr">Уведомления</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="menucomponent__StyledBaseMenuElementContainer-sc-j0lqre-1 menucomponent__StyledMenuFooter-sc-j0lqre-3 nQaxt cmWiDA">
+                <div class="menu-footercomponent__StyledMenuFooterContainer-sc-1jjnjy1-0 eoZJXN">
+                  <div class="qa-lang-switcher LangSwitcher"><a href="./payment-buttons.html&amp;lang=en"
+                      class="LangSwitcher__StyledLangSwitcherLink-sc-aeqmq8-0 dmYeJX LangSwitcherLink">English<div
+                        class="LangSwitcher__StyledLangIcon-sc-aeqmq8-1 LangSwitcher__StyledEnLangIcon-sc-aeqmq8-3 foHnDO msskl">
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="templatecomponent__StyledPageContentContainer-sc-1urvbur-2 gDrlSX">
+          <div class="templatecomponent__StyledHeaderContainer-sc-1urvbur-6 HcAkx">
+            <div class="headercomponent__StyledHeaderContainer-sc-4msho7-0 mqMkU">
+              <div class="headercomponent__StyledHeaderContentWrapper-sc-4msho7-3 bBZZyV">
+                <div class="headercomponent__StyledHeaderContentContainer-sc-4msho7-4 ecHORk">
+                  <div class="headercomponent__StyledLogoContainer-sc-4msho7-1 kjKWux"><a href="https://yookassa.ru/"
+                      class="header-logocomponent__StyledHeaderLogoContainer-sc-1ocf8w-0 eDDbHW">
+                      <div class="header-logocomponent__StyledIconContainer-sc-1ocf8w-1 eNJjWg"></div>
+                    </a></div>
+                  <div class="headercomponent__StyledControlsContainer-sc-4msho7-5 fOWMyw">
+                    <form method="get" class="header-searchcomponent__StyledSearchForm-sc-esz068-0 cGHBlG">
+                      <div class="header-searchcomponent__StyledSearchInputContainer-sc-esz068-1 hNDFuS"><input
+                          type="text" name="text" value="" placeholder="Поиск по документации"
+                          class="header-searchcomponent__StyledSearchInput-sc-esz068-2 jLcvQb" />
+                        <div class="header-searchcomponent__StyledClearButton-sc-esz068-5 cQXhUW"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+                            <path d="M10 .7L9.3 0 5 4.3.7 0 0 .7 4.3 5 0 9.3l.7.7L5 5.7 9.3 10l.7-.7L5.7 5z"></path>
+                          </svg></div>
+                      </div><input type="text" name="site" value="https://yoomoney.ru/docs/payment-buttons" readonly=""
+                        class="header-searchcomponent__StyledHiddenInput-sc-esz068-3 cOEtwF" /><input type="submit"
+                        class="header-searchcomponent__StyledHiddenSubmitInput-sc-esz068-4 iSXBj" />
+                      <div class="header-searchcomponent__StyledSearchIcon-sc-esz068-6 fxokfN"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                          <path
+                            d="M11.022 9.632l3.973 3.973-1.414 1.414-3.978-3.977a5.5 5.5 0 1 1 1.419-1.41zM6.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z">
+                          </path>
+                        </svg></div>
+                    </form>
+                    <div class="headercomponent__StyledRightControlsContainer-sc-4msho7-6 bssfuF">
+                      <div class="headercomponent__StyledBurgerContainer-sc-4msho7-2 ceKdAS">
+                        <div
+                          class="header-burgercomponent__StyledHeaderBurgerContainer-sc-1neo2ed-0 ezIEMe HeaderBurger">
+                          <div class="header-burgercomponent__StyledHeaderBurgerIcon-sc-1neo2ed-1 iPnwQP"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="templatecomponent__StyledContentContainer-sc-1urvbur-3 gQSlLg">
+            <div class="Article__StyledArticleContainer-sc-d9mj21-0 cGzyql Article">
+              <div class="Article__StyledArticleContentContainer-sc-d9mj21-2 eOdypf">
+                <div>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 hVufbF TextHeader">
+                      <div id="api_юmoney_для_сбора_денег"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 hJUXob qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#api_юmoney_для_сбора_денег"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>API ЮMoney для сбора
+                          денег</span></div>
+                    </div>
+                  </div>
+                  <div class="Paragraph__StyledParagraphContainer-sc-68s4q-0 crGYzs qa-markdown-component-paragraph">В
+                    ЮMoney есть специальный сервис для <a href="https://yoomoney.ru/get/fundraise"
+                      class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                      target="">коллективного сбора денег</a>.
+                    Этот инструмент подойдет всем, кому нужно получать деньги для личных целей: например, собирать на
+                    совместные покупки, общие подарки или свой проект.</div>
+                  <div class="Paragraph__StyledParagraphContainer-sc-68s4q-0 crGYzs qa-markdown-component-paragraph">С
+                    помощью этого API вы можете сделать нестандартную форму для сбора денег и настроить для нее
+                    HTTP-уведомления.</div>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 eVzUsI TextHeader">
+                      <div id="specifics"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 isVumS qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#specifics"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>Возможности</span></div>
+                    </div>
+                  </div>
+                  <div class="Paragraph__StyledParagraphContainer-sc-68s4q-0 crGYzs qa-markdown-component-paragraph">Вы
+                    можете собрать виджет или кнопку в <a href="https://yoomoney.ru/get/fundraise/create"
+                      class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                      target="">конструкторе</a> и разместить их на сайте или в блоге.</div>
+                  <div class="Paragraph__StyledParagraphContainer-sc-68s4q-0 crGYzs qa-markdown-component-paragraph">
+                    Если вам нужны дополнительные функции или собственный дизайн, создайте свою форму по этому API.
+                    С его помощью можно:</div>
+                  <ul class="List__StyledUlListContainer-sc-iruana-0 fJveqC qa-markdown-component-list List">
+                    <li>принимать переводы в кошелек ЮMoney — с банковских карт и из кошельков ЮMoney,</li>
+                    <li>получать уведомления об этих переводах.</li>
+                  </ul>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 eVzUsI TextHeader">
+                      <div id="how-to"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 isVumS qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#how-to"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>Как использовать</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 iQkOBp TextHeader">
+                      <div id="how-to-construction-kit"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 hJUXob qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#how-to-construction-kit"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>Виджет или кнопка в
+                          конструкторе</span></div>
+                    </div>
+                  </div>
+                  <ol class="List__StyledOlListContainer-sc-iruana-1 cORcdH qa-markdown-component-list List">
+                    <li><a href="https://yoomoney.ru/get/fundraise/create"
+                        class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                        target="">Соберите виджет или кнопку</a> в конструкторе.</li>
+                    <li>Разместите HTML-код на своем сайте.</li>
+                    <li>Подключите сообщения о переводах: по <a href="https://yoomoney.ru/settings?w=inform"
+                        class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                        target="">email</a> или с помощью <a
+                        href="https://yoomoney.ru/transfer/myservices/http-notification"
+                        class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                        target="">HTTP-уведомлений</a>.</li>
+                  </ol>
+                  <div class="Paragraph__StyledParagraphContainer-sc-68s4q-0 crGYzs qa-markdown-component-paragraph">
+                    Информация о созданном сборе будет отображаться на <a href="https://yoomoney.ru/get/fundraise"
+                      class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                      target="">странице ваших сборов</a>.</div>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 iQkOBp TextHeader">
+                      <div id="how-to-api"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 hJUXob qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#how-to-api"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>Нестандартная форма</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="List__StyledOlListContainer-sc-iruana-1 cORcdH qa-markdown-component-list List">
+                    <li>Соберите форму по API.</li>
+                    <li>Включите HTTP-уведомления.</li>
+                    <li>Реализуйте прием уведомлений.</li>
+                  </ol><a href="/docs/payment-buttons/using-api/flow"
+                    class="Link__StyledLinkContainer-sc-13unqid-0 Link__StyledArrowLinkContainer-sc-13unqid-2 bmChtx duTfFo qa-markdown-component-link  Link"
+                    target="">Подробная инструкция<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.10571 2.31794C9.3986 2.02504 9.87348 2.02504 10.1664 2.31794L15.4256 7.57714L15.461 7.61255C15.6749 7.82643 15.6749 8.17321 15.461 8.3871L15.4252 8.42291L10.1664 13.6817C9.87348 13.9746 9.3986 13.9746 9.10571 13.6817C8.81282 13.3888 8.81282 12.9139 9.10571 12.621L11.0939 10.6329C11.5349 10.1919 12.0228 9.80047 12.549 9.46563L14.0011 8.54159L11.5 8.75001H0.75C0.335786 8.75001 0 8.41422 0 8.00001C0 7.5858 0.335786 7.25001 0.75 7.25001H11.5L14.0017 7.45849L12.549 6.53402C12.0228 6.19918 11.5349 5.80775 11.0939 5.36674L9.10571 3.3786C8.81282 3.0857 8.81282 2.61083 9.10571 2.31794Z">
+                      </path>
+                    </svg></a>
+                  <div
+                    class="Lantern__StyledLanternContainer-sc-1ba6d4n-0 eRRQeT qa-markdown-component-lantern Lantern">
+                    <div class="PtIconPlus__StyledPtIconPlus-sc-1cgbb1n-0 dCaVN">
+                      <div class="PtIconPlus__StyledPtIconPlusIcon-sc-1cgbb1n-1 jTmYWU">
+                        <div class="Lantern__StyledIcon-sc-1ba6d4n-1 beblBA"><svg width="16" height="16"
+                            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M8 15C6.14348 15 4.36301 14.2625 3.05025 12.9497C1.7375 11.637 1 9.85652 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM7 3V9H9V3H7ZM7 11V13H9V11H7Z">
+                            </path>
+                          </svg></div>
+                      </div>
+                      <div class="PtIconPlus__StyledPtIconPlusBlock-sc-1cgbb1n-2 irrygG">Информация о сборах с
+                        использованием нестандартных форм не отображается на <a href="https://yoomoney.ru/get/fundraise"
+                          class="Link__StyledLinkContainer-sc-13unqid-0 bmChtx qa-markdown-component-link  Link"
+                          target="">странице сборов</a>.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qa-markdown-component-text-header">
+                    <div class="TextHeader__StyledTextHeaderContainer-sc-5hk3mz-0 eVzUsI TextHeader">
+                      <div id="что_почитать_еще"
+                        class="TextHeader__StyledAnchorPositionMarker-sc-5hk3mz-1 isVumS qa-markdown-component-text-header-anchor-position-marker">
+                      </div>
+                      <div><a href="#что_почитать_еще"
+                          class="TextHeaderAnchor__StyledTextHeaderAnchorContainer-sc-1vyemfz-0 fSXTEM qa-markdown-component-text-header-anchor"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path fill-rule="evenodd"
+                              d="M11.177 3.41L9.413 5.176a1 1 0 0 1-1.414 0l-.705-.705 3.177-3.178a.999.999 0 0 1 1.412 0l2.825 2.825a.999.999 0 0 1 0 1.412L11.53 8.706l-.705-.705a1 1 0 0 1 0-1.414l1.764-1.764-1.412-1.412zm-9.885 7.061L4.47 7.294l.705.705a1 1 0 0 1 0 1.414L3.41 11.177l1.412 1.412 1.764-1.764a1 1 0 0 1 1.414 0l.705.705-3.177 3.178a.999.999 0 0 1-1.412 0l-2.825-2.825a.999.999 0 0 1 0-1.412zm5.649-3.53a1.498 1.498 0 1 1 2.118 2.118 1.498 1.498 0 0 1-2.118-2.118z">
+                            </path>
+                          </svg> </a></div>
+                      <div class="TextHeader__StyledContentWrapper-sc-5hk3mz-2 dvEcgq"><span>Что почитать еще</span>
+                      </div>
+                    </div>
+                  </div><a href="https://yoomoney.ru/page?id=536316"
+                    class="Link__StyledLinkContainer-sc-13unqid-0 Link__StyledRelatedLinkContainer-sc-13unqid-3 bmChtx iBPOzs qa-markdown-component-link  Link"
+                    target="">Комиссии и лимиты<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                      <path
+                        d="M11.177 7H.986v2h10.181l-4.588 4.593 1.414 1.414L15 7.992 7.993.993 6.579 2.407 11.177 7z">
+                      </path>
+                    </svg></a><a href="https://yoomoney.ru/get/fundraise/create"
+                    class="Link__StyledLinkContainer-sc-13unqid-0 Link__StyledRelatedLinkContainer-sc-13unqid-3 bmChtx iBPOzs qa-markdown-component-link  Link"
+                    target="">Конструктор виджетов и кнопок<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16">
+                      <path
+                        d="M11.177 7H.986v2h10.181l-4.588 4.593 1.414 1.414L15 7.992 7.993.993 6.579 2.407 11.177 7z">
+                      </path>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="Article__StyledNavigationMenuContainer-sc-d9mj21-1 ggUQMo">
+                <div class="NavigationMenu__StyledNavigationMenuContainer-sc-aj8qk-0 genPHu NavigationMenu">
+                  <div>
+                    <div id="specifics"
+                      class="NavigationMenuItem__StyledNavigationMenuItemContainer-sc-1wnpis-0 jolveN NavigationMenuItem">
+                      <a href="#specifics">Возможности</a>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="how-to"
+                      class="NavigationMenuItem__StyledNavigationMenuItemContainer-sc-1wnpis-0 jolveN NavigationMenuItem">
+                      <a href="#how-to">Как использовать</a>
+                    </div>
+                  </div>
+                  <div class="NavigationMenu__StyledNavigationLine-sc-aj8qk-1 buZHvm"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footercomponent__StyledLine-sc-1dtgqcx-2 belxbf"></div>
+          <div class="footercomponent__StyledFooterContainer-sc-1dtgqcx-0 RVQca">
+            <div class="footercomponent__StyledFooterContent-sc-1dtgqcx-1 jYaeAK">
+              <div class="footer-copyrightcomponent__StyledCopyrightContainer-sc-6chwi4-0 DAgrZ">© 2023, ООО НКО «<a
+                  href="https://yookassa.ru/joinups"
+                  class="footer-copyrightcomponent__StyledCopyrightLink-sc-6chwi4-1 dUoOjB">ЮМани</a>»</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://static.yoomoney.ru/files-front/libs/react/17.0.2/react-with-dom.min.js"></script>
+  <script>window.__data = {
+      "assets": undefined, "app": { "title": "API ЮMoney для сбора денег" }, "content": ({ viewId, data }) => {
+        const { content, sheet } = getViewForServerRender(viewId)(data);
+        const html = ReactDOMServer.renderToString(content);
+        const styles = sheet.getStyleTags();
+        return `${styles}<div id="root">${html}</div>`;
+      }, "preloadedState": { "navigation": [{ "text": "Возможности", "anchor": "specifics" }, { "text": "Как использовать", "anchor": "how-to" }], "meta": { "title": "API ЮMoney для сбора денег", "metaTags": { "description": "Коллективный сбор денег в ЮMoney — инструмент для сбора денег в интернете на различные цели. Их можно использовать для личных целей, без договора. Можно использовать готовые решения или сделать свою собственную форму по API." } }, "content": "\n\u003CHeader size='h1' id='api_юmoney_для_сбора_денег' children=\"API ЮMoney для сбора денег\" \u002F\u003E\n\nВ ЮMoney есть специальный сервис для [коллективного сбора денег](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\nЭтот инструмент подойдет всем, кому нужно получать деньги для личных целей: например, собирать на совместные покупки, общие подарки или свой проект.\n\nС помощью этого API вы можете сделать нестандартную форму для сбора денег и настроить для нее HTTP-уведомления.\n\n\u003CHeader size='h2' id='specifics' children=\"Возможности\" \u002F\u003E\n\nВы можете собрать виджет или кнопку в [конструкторе](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate) и разместить их на сайте или в блоге.\n\nЕсли вам нужны дополнительные функции или собственный дизайн, создайте свою форму по этому API.\nС его помощью можно:\n\n* принимать переводы в кошелек ЮMoney — с банковских карт и из кошельков ЮMoney,\n* получать уведомления об этих переводах.\n\n\u003CHeader size='h2' id='how-to' children=\"Как использовать\" \u002F\u003E\n\n\u003CHeader size='h3' id='how-to-construction-kit' children=\"Виджет или кнопка в конструкторе\" \u002F\u003E\n\n1. [Соберите виджет или кнопку](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate) в конструкторе.\n2. Разместите HTML-код на своем сайте.\n3. Подключите сообщения о переводах: по [email](https:\u002F\u002Fyoomoney.ru\u002Fsettings?w=inform) или с помощью [HTTP-уведомлений](https:\u002F\u002Fyoomoney.ru\u002Ftransfer\u002Fmyservices\u002Fhttp-notification).\n\nИнформация о созданном сборе будет отображаться на [странице ваших сборов](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\n\n\u003CHeader size='h3' id='how-to-api' children=\"Нестандартная форма\" \u002F\u003E\n\n1. Соберите форму по API.\n2. Включите HTTP-уведомления.\n3. Реализуйте прием уведомлений.\n\n\u003CArrowLink href='\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fflow' children=\"Подробная инструкция\" \u002F\u003E\n\n\u003CLantern\u003E\nИнформация о сборах с использованием нестандартных форм не отображается на [странице сборов](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\n\u003C\u002FLantern\u003E\n\n\u003CHeader size='h2' view='article' id='что_почитать_еще' children=\"Что почитать еще\" \u002F\u003E\n\n\u003CRelatedLink href='https:\u002F\u002Fyoomoney.ru\u002Fpage?id=536316'\u003EКомиссии и лимиты\u003C\u002FRelatedLink\u003E\n\u003CRelatedLink href='https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate'\u003EКонструктор виджетов и кнопок\u003C\u002FRelatedLink\u003E\n", "documentTemplate": "money", "frequentRequests": { "developers": ["Секретный ключ", "Тестирование", "Чеки"], "support": ["Чеки", "Возвраты", "Тестовый магазин"] }, "documentHost": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons", "languages": [{ "key": "ru", "name": "Русский", "isActive": true, "url": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg&lang=ru" }, { "key": "en", "name": "English", "isActive": false, "url": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg&lang=en" }], "language": "ru", "thirdPartyServices": { "yametric": { "enabled": true, "id": 30529882 }, "googleTagManager": { "enabled": false }, "ganalytics": { "enabled": true, "id": "UA-92805663-1" }, "delighted": { "enabled": true } }, "user": { "authStatus": "unauthorized" }, "urls": { "external": { "kassaLkUrl": "https:\u002F\u002Fyookassa.ru\u002Fmy", "kassaRegisterUrl": "https:\u002F\u002Fyookassa.ru\u002Fjoinups", "kassaAboutUrl": "https:\u002F\u002Fyoomoney.ru\u002Fabout.xml" }, "serviceUrl": "https:\u002F\u002Fyoomoney.ru\u002F", "supportDocsUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fsupport", "apiDocsUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers", "apiReferenceUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fapi", "searchPortalUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fajax\u002Fsearch", "apiDocsFeedbackUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fajax\u002Ffeedback" }, "headerUser": { "uid": null, "hasOffice": false }, "activePath": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg", "menu": [{ "content": "Основы работы с API", "type": "h1", "isActive": false, "icon": null, "hasArticle": false, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api", "items": [{ "content": "Сценарий", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fflow", "items": [] }, { "content": "Формы", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fforms", "items": [] }, { "content": "Уведомления", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fnotifications", "items": [] }] }] }, "language": "ru", "appUrls": { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "default": "" }, "layout": undefined, "title": undefined, "favicon": undefined, "OGPData": undefined
+    };</script>
+  <script>window.__urls__ = { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "default": "" };</script>
+  <script>window.__data__ = {
+      "assets": undefined, "app": { "title": "API ЮMoney для сбора денег" }, "content": ({ viewId, data }) => {
+        const { content, sheet } = getViewForServerRender(viewId)(data);
+        const html = ReactDOMServer.renderToString(content);
+        const styles = sheet.getStyleTags();
+        return `${styles}<div id="root">${html}</div>`;
+      }, "preloadedState": { "navigation": [{ "text": "Возможности", "anchor": "specifics" }, { "text": "Как использовать", "anchor": "how-to" }], "meta": { "title": "API ЮMoney для сбора денег", "metaTags": { "description": "Коллективный сбор денег в ЮMoney — инструмент для сбора денег в интернете на различные цели. Их можно использовать для личных целей, без договора. Можно использовать готовые решения или сделать свою собственную форму по API." } }, "content": "\n\u003CHeader size='h1' id='api_юmoney_для_сбора_денег' children=\"API ЮMoney для сбора денег\" \u002F\u003E\n\nВ ЮMoney есть специальный сервис для [коллективного сбора денег](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\nЭтот инструмент подойдет всем, кому нужно получать деньги для личных целей: например, собирать на совместные покупки, общие подарки или свой проект.\n\nС помощью этого API вы можете сделать нестандартную форму для сбора денег и настроить для нее HTTP-уведомления.\n\n\u003CHeader size='h2' id='specifics' children=\"Возможности\" \u002F\u003E\n\nВы можете собрать виджет или кнопку в [конструкторе](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate) и разместить их на сайте или в блоге.\n\nЕсли вам нужны дополнительные функции или собственный дизайн, создайте свою форму по этому API.\nС его помощью можно:\n\n* принимать переводы в кошелек ЮMoney — с банковских карт и из кошельков ЮMoney,\n* получать уведомления об этих переводах.\n\n\u003CHeader size='h2' id='how-to' children=\"Как использовать\" \u002F\u003E\n\n\u003CHeader size='h3' id='how-to-construction-kit' children=\"Виджет или кнопка в конструкторе\" \u002F\u003E\n\n1. [Соберите виджет или кнопку](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate) в конструкторе.\n2. Разместите HTML-код на своем сайте.\n3. Подключите сообщения о переводах: по [email](https:\u002F\u002Fyoomoney.ru\u002Fsettings?w=inform) или с помощью [HTTP-уведомлений](https:\u002F\u002Fyoomoney.ru\u002Ftransfer\u002Fmyservices\u002Fhttp-notification).\n\nИнформация о созданном сборе будет отображаться на [странице ваших сборов](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\n\n\u003CHeader size='h3' id='how-to-api' children=\"Нестандартная форма\" \u002F\u003E\n\n1. Соберите форму по API.\n2. Включите HTTP-уведомления.\n3. Реализуйте прием уведомлений.\n\n\u003CArrowLink href='\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fflow' children=\"Подробная инструкция\" \u002F\u003E\n\n\u003CLantern\u003E\nИнформация о сборах с использованием нестандартных форм не отображается на [странице сборов](https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise).\n\u003C\u002FLantern\u003E\n\n\u003CHeader size='h2' view='article' id='что_почитать_еще' children=\"Что почитать еще\" \u002F\u003E\n\n\u003CRelatedLink href='https:\u002F\u002Fyoomoney.ru\u002Fpage?id=536316'\u003EКомиссии и лимиты\u003C\u002FRelatedLink\u003E\n\u003CRelatedLink href='https:\u002F\u002Fyoomoney.ru\u002Fget\u002Ffundraise\u002Fcreate'\u003EКонструктор виджетов и кнопок\u003C\u002FRelatedLink\u003E\n", "documentTemplate": "money", "frequentRequests": { "developers": ["Секретный ключ", "Тестирование", "Чеки"], "support": ["Чеки", "Возвраты", "Тестовый магазин"] }, "documentHost": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons", "languages": [{ "key": "ru", "name": "Русский", "isActive": true, "url": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg&lang=ru" }, { "key": "en", "name": "English", "isActive": false, "url": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg&lang=en" }], "language": "ru", "thirdPartyServices": { "yametric": { "enabled": true, "id": 30529882 }, "googleTagManager": { "enabled": false }, "ganalytics": { "enabled": true, "id": "UA-92805663-1" }, "delighted": { "enabled": true } }, "user": { "authStatus": "unauthorized" }, "urls": { "external": { "kassaLkUrl": "https:\u002F\u002Fyookassa.ru\u002Fmy", "kassaRegisterUrl": "https:\u002F\u002Fyookassa.ru\u002Fjoinups", "kassaAboutUrl": "https:\u002F\u002Fyoomoney.ru\u002Fabout.xml" }, "serviceUrl": "https:\u002F\u002Fyoomoney.ru\u002F", "supportDocsUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fsupport", "apiDocsUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers", "apiReferenceUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fapi", "searchPortalUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fajax\u002Fsearch", "apiDocsFeedbackUrl": "https:\u002F\u002Fyoomoney.ru\u002Fdevelopers\u002Fajax\u002Ffeedback" }, "headerUser": { "uid": null, "hasOffice": false }, "activePath": "\u002Fdocs\u002Fpayment-buttons?click_footer=api_sbora_deneg", "menu": [{ "content": "Основы работы с API", "type": "h1", "isActive": false, "icon": null, "hasArticle": false, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api", "items": [{ "content": "Сценарий", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fflow", "items": [] }, { "content": "Формы", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fforms", "items": [] }, { "content": "Уведомления", "type": "h2", "isActive": false, "icon": null, "hasArticle": true, "isExpanded": false, "url": "https:\u002F\u002Fyoomoney.ru\u002Fdocs\u002Fpayment-buttons\u002Fusing-api\u002Fnotifications", "items": [] }] }] }, "language": "ru", "appUrls": { "lk": "https:\u002F\u002Fyookassa.ru", "kassa": "https:\u002F\u002Fyookassa.ru", "makeupd": "https:\u002F\u002Fyoomoney.ru", "default": "" }, "layout": undefined, "title": undefined, "favicon": undefined, "OGPData": undefined
+    };</script>
+  <script>window.publicUrlPath = 'https://static.yoomoney.ru/checkout-docs-portal/';</script>
+  <script
+    src="https://static.yoomoney.ru/checkout-docs-portal/documents-page.ru.008dead98401afa79d73c748f1e73f3e.js"></script>
+  <script src="https://static.yoomoney.ru/checkout-docs-portal/documents-page.48684a1ca383c777cd04.js"></script>
+  <link rel="stylesheet" href="./css/grandbazar.css">
+</body>
+
+</html>
